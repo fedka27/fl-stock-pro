@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="@dimen/drawer_menu_left_padding"   xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <com.artjoker.core.views.ArtJokerSearchView
+        style="@style/SearchViewStyle"
+        android:id="@+id/sv_by_atv_big_photo"
+        android:layout_toLeftOf="@+id/ib_filters_big_photo"
+        custom:searchViewIcon="@drawable/search"
+        android:layout_alignParentTop="true" />
+
+    <ImageButton
+         style="@style/WrapContentStyle"
+        android:id="@+id/ib_filters_big_photo"
+        android:background="@drawable/button_filters_selector"
+        android:layout_alignTop="@+id/sv_by_atv_big_photo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/advertisement_location_text_size"
+        android:layout_marginTop="@dimen/add_advert_text_top_margin" />
+
+    <ListView
+        style="@style/WrapContentStyle"
+        android:id="@+id/lv_adverts_big_photo"
+        android:layout_alignLeft="@+id/sv_by_atv_big_photo"
+        android:layout_alignStart="@+id/sv_by_atv_big_photo"
+        android:layout_below="@+id/ib_filters_big_photo"
+        android:layout_marginTop="@dimen/add_advert_text_top_margin" />
+
+</RelativeLayout>

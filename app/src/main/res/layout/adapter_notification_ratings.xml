@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/drawer_menu_left_padding">
+
+    <FrameLayout
+        android:id="@+id/rl_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="@dimen/notification_image_margin">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            fresco:progressBarImage="@drawable/no_image"
+            fresco:failureImage="@drawable/no_image"
+            fresco:roundAsCircle="true" />
+
+        <ImageView
+            android:id="@+id/iv_black_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/user_black"
+            android:visibility="visible" />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.artjoker.core.views.ArtJokerTextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:singleLine="true"
+                android:textSize="@dimen/font_size_5pt"
+                android:textStyle="normal"
+                tools:text="Bagach Alxandr  Vladimirovich" />
+
+            <com.artjoker.core.views.ArtJokerTextView
+                android:id="@+id/tv_date"
+                style="@style/SanSerifLight"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="some date"
+                android:textColor="@color/date_text_color"
+                android:textSize="@dimen/font_size_5pt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <com.artjoker.core.views.ArtJokerTextView
+                android:id="@+id/tv_text"
+                style="@style/SanSerifLight"
+                android:layout_weight="1"
+                android:singleLine="false"
+                android:textColor="@color/message_color"
+                android:textSize="@dimen/font_size_5pt"
+                android:visibility="visible" />
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/drawer_menu_top_padding"
+                android:layout_gravity="right"
+                android:layout_marginLeft="@dimen/drawer_menu_left_padding"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:progressDrawable="@drawable/rating_bar_layers"
+                android:rating="1"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <com.artjoker.core.views.ArtJokerTextView
+                android:id="@+id/tv_message"
+                style="@style/SanSerifLight"
+                android:layout_gravity="right"
+                android:background="@drawable/chat_outcoming_message_background_selector"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/message_color"
+                android:textSize="@dimen/font_size_6pt"
+                android:visibility="gone" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

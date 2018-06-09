@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_header">
+
+    <RelativeLayout xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_header"
+        android:paddingLeft="@dimen/drawer_name_top_padding"
+        android:paddingRight="@dimen/drawer_name_top_padding">
+
+        <com.artjoker.core.views.ArtJokerTextView
+            android:id="@+id/tv_filters_title"
+            style="@style/SanSerifLight"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/drawer_name_top_padding"
+            android:layout_marginTop="@dimen/drawer_name_top_padding"
+            android:text="@string/filters"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_7pt" />
+
+        <com.artjoker.core.views.ArtJokerTextView
+            android:id="@+id/button_reset_filters"
+            style="@style/SanSerifLight"
+            android:layout_alignBottom="@+id/tv_filters_title"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/drawer_name_top_padding"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/innactive"
+            android:drawablePadding="@dimen/advertisement_location_margin"
+            android:text="@string/reset_filters"
+            android:textColor="@drawable/menu_button_text_selector"
+            android:textSize="@dimen/font_size_5pt" />
+
+        <com.stockroompro.views.FilterHeaderView
+            android:id="@+id/filter_button_sort"
+            style="@style/WrapContentStyle"
+            android:layout_alignLeft="@+id/tv_filters_title"
+            android:layout_alignStart="@+id/tv_filters_title"
+            android:layout_below="@+id/tv_filters_title"
+            custom:customText="@string/filter_sort" />
+
+        <com.stockroompro.views.ExpandableLinearLayout
+            android:id="@+id/filter_expandable_sort"
+            style="@style/WrapContentStyle"
+            android:layout_width="match_parent"
+            android:layout_alignLeft="@+id/filter_button_sort"
+            android:layout_alignStart="@+id/filter_button_sort"
+            android:layout_below="@+id/filter_button_sort"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/filters_sort_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/filter_order_by_last_added"
+                    style="@style/FilterRadioButton"
+                    android:checked="true"
+                    android:text="@string/filter_text_last_added" />
+
+                <RadioButton
+                    android:id="@+id/filter_order_by_price_asc"
+                    style="@style/FilterRadioButton"
+                    android:text="@string/filter_text_by_price_asc" />
+
+                <RadioButton
+                    android:id="@+id/filter_order_by_price_desc"
+                    style="@style/FilterRadioButton"
+                    android:text="@string/filter_text_by_price_desc" />
+            </RadioGroup>
+        </com.stockroompro.views.ExpandableLinearLayout>
+
+        <com.stockroompro.views.FilterHeaderView
+            android:id="@+id/filter_button_city"
+            style="@style/WrapContentStyle"
+            android:layout_alignLeft="@+id/filter_expandable_sort"
+            android:layout_alignStart="@+id/filter_expandable_sort"
+            android:layout_below="@+id/filter_expandable_sort"
+            android:layout_marginTop="@dimen/advertisement_location_text_size"
+            custom:customText="@string/add_advert_city"
+            android:visibility="gone"/>
+
+        <com.stockroompro.views.ExpandableLinearLayout
+            android:id="@+id/filter_expandable_city"
+            style="@style/WrapContentStyle"
+            android:layout_width="match_parent"
+            android:layout_alignLeft="@+id/filter_button_city"
+            android:layout_alignStart="@+id/filter_button_city"
+            android:layout_below="@+id/filter_button_city">
+
+            <AutoCompleteTextView
+                android:id="@+id/filter_city_autocomplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_button_background_selector"
+                android:hint="@string/add_advert_city"
+                android:imeOptions="actionSearch"
+                android:inputType="textNoSuggestions"
+                android:padding="@dimen/padding_click" />
+        </com.stockroompro.views.ExpandableLinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_price_filter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/filter_expandable_city"
+            android:layout_alignStart="@+id/filter_expandable_city"
+            android:layout_below="@+id/filter_expandable_city"
+            android:layout_marginTop="@dimen/advertisement_location_margin"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/advertisement_text_price_size"
+            android:visibility="gone">
+
+            <com.artjoker.core.views.ArtJokerTextView
+                android:id="@+id/tv_filter_price_title"
+                style="@style/WrapContentStyle"
+                android:fontFamily="@string/sans_serif_medium"
+                android:text="@string/price_title"
+                android:textSize="@dimen/font_size_5pt" />
+
+            <com.yahoo.mobile.client.android.util.RangeSeekBar
+                android:id="@+id/range_seek_bar_price_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <com.stockroompro.views.FilterHeaderView
+            android:id="@+id/filter_button_new_used"
+            style="@style/WrapContentStyle"
+            android:layout_alignLeft="@+id/rl_price_filter"
+            android:layout_alignStart="@+id/rl_price_filter"
+            android:layout_below="@+id/rl_price_filter"
+            android:layout_marginTop="@dimen/advertisement_location_margin"
+            custom:customText="@string/filter_be_used" />
+
+        <com.stockroompro.views.ExpandableLinearLayout
+            android:id="@+id/filter_expandable_new_used"
+            style="@style/WrapContentStyle"
+            android:layout_width="match_parent"
+            android:layout_alignLeft="@+id/filter_button_new_used"
+            android:layout_alignStart="@+id/filter_button_new_used"
+            android:layout_below="@+id/filter_button_new_used"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_filter_new"
+                style="@style/FilterRadioButton"
+                android:text="@string/filter_text_new" />
+
+            <CheckBox
+                android:id="@+id/cb_filter_used"
+                style="@style/FilterRadioButton"
+                android:text="@string/filter_text_used" />
+        </com.stockroompro.views.ExpandableLinearLayout>
+
+        <com.stockroompro.views.FilterHeaderView
+            android:id="@+id/filter_button_buy_sell"
+            style="@style/WrapContentStyle"
+            android:layout_alignLeft="@+id/filter_expandable_new_used"
+            android:layout_alignStart="@+id/filter_expandable_new_used"
+            android:layout_below="@+id/filter_expandable_new_used"
+            android:layout_marginTop="@dimen/advertisement_location_margin"
+            custom:customText="@string/filter_by_buy_sell" />
+
+        <com.stockroompro.views.ExpandableLinearLayout
+            android:id="@+id/filter_expandable_buy_sell"
+            style="@style/WrapContentStyle"
+            android:layout_width="match_parent"
+            android:layout_alignLeft="@+id/filter_button_buy_sell"
+            android:layout_alignStart="@+id/filter_button_buy_sell"
+            android:layout_below="@+id/filter_button_buy_sell"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_filter_buy"
+                style="@style/FilterRadioButton"
+                android:text="@string/filter_text_buy" />
+
+            <CheckBox
+                android:id="@+id/cb_filter_sell"
+                style="@style/FilterRadioButton"
+                android:text="@string/filter_text_sell" />
+        </com.stockroompro.views.ExpandableLinearLayout>
+
+        <com.stockroompro.views.FilterHeaderView
+            android:id="@+id/filter_button_sale_exchange_free"
+            style="@style/WrapContentStyle"
+            android:layout_alignLeft="@+id/filter_expandable_buy_sell"
+            android:layout_alignStart="@+id/filter_expandable_buy_sell"
+            android:layout_below="@+id/filter_expandable_buy_sell"
+            android:layout_marginTop="@dimen/advertisement_location_text_size"
+            custom:customText="@string/filter_sale_exchange_free" />
+
+        <com.stockroompro.views.ExpandableLinearLayout
+            android:id="@+id/filter_expandable_sale_exchange_free"
+            style="@style/WrapContentStyle"
+            android:layout_width="match_parent"
+            android:layout_alignLeft="@+id/filter_button_sale_exchange_free"
+            android:layout_alignStart="@+id/filter_button_sale_exchange_free"
+            android:layout_below="@+id/filter_button_sale_exchange_free"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_filter_sale"
+                style="@style/FilterRadioButton"
+                android:text="@string/filter_text_sale" />
+
+            <CheckBox
+                android:id="@+id/cb_filter_exchange"
+                style="@style/FilterRadioButton"
+                android:text="@string/filter_text_exchange" />
+
+            <CheckBox
+                android:id="@+id/cb_filter_free"
+                style="@style/FilterRadioButton"
+                android:text="@string/filter_text_free" />
+        </com.stockroompro.views.ExpandableLinearLayout>
+
+        <com.stockroompro.views.FilterHeaderView
+            android:id="@+id/fragment_button_more_filters"
+            style="@style/WrapContentStyle"
+            android:layout_alignLeft="@+id/filter_expandable_sale_exchange_free"
+            android:layout_alignStart="@+id/filter_expandable_sale_exchange_free"
+            android:layout_below="@+id/filter_expandable_sale_exchange_free"
+            android:layout_marginTop="@dimen/advertisement_location_margin"
+            custom:customText="@string/filter_more" />
+
+        <com.stockroompro.views.ExpandableLinearLayout
+            android:id="@+id/filter_expandable_more_filters"
+            style="@style/WrapContentStyle"
+            android:layout_width="match_parent"
+            android:layout_alignLeft="@+id/fragment_button_more_filters"
+            android:layout_alignStart="@+id/fragment_button_more_filters"
+            android:layout_below="@+id/fragment_button_more_filters"
+            android:orientation="vertical"/>
+    </RelativeLayout>
+</ScrollView>

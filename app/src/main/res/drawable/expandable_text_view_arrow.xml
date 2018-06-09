@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <level-list>
+            <item android:maxLevel="0">
+                <bitmap android:src="@drawable/arrow_down"/>
+            </item>
+            <item android:maxLevel="1">
+                <bitmap android:src="@drawable/arrow_up"/>
+            </item>
+        </level-list>
+    </item>
+</selector>

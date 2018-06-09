@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:paddingLeft="@dimen/drawer_menu_left_padding"
+    android:paddingRight="@dimen/drawer_menu_left_padding"
+    android:paddingBottom="@dimen/drawer_menu_left_padding">
+
+    <LinearLayout
+        android:id="@+id/fragment_comments_advert_detail"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/search_view_background">
+
+        <com.artjoker.core.views.ArtJokerTextView
+            android:id="@+id/fragment_comments_advert_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_6pt" />
+
+        <ImageButton
+            android:id="@+id/fragment_comments_go_to_advert"
+            style="@style/WrapContentStyle"
+            android:layout_marginRight="@dimen/change_pass_old_pass_bot_margin"
+            android:background="@color/search_view_background"
+            android:padding="@dimen/drawer_menu_left_padding"
+            android:src="@drawable/arr_gray_in_circle" />
+    </LinearLayout>
+
+    <com.artjoker.core.views.ArtJokerTextView
+        style="@style/WrapContentStyle"
+        android:id="@+id/tv_comments_header_title"
+        android:layout_below="@+id/fragment_comments_advert_detail"
+        android:layout_centerHorizontal="true"
+        android:text="@string/comments_big_title"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textStyle="normal"
+        android:fontFamily="@string/sans_serif_medium"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/font_size_6pt"
+        android:layout_marginRight="@dimen/advertisement_location_text_size" />
+
+    <com.artjoker.core.views.ArtJokerTextView
+        style="@style/WrapContentStyle"
+        android:id="@+id/tv_comments_count"
+        tools:text="@string/comment_count"
+        android:textSize="@dimen/font_size_6pt"
+        android:layout_alignTop="@+id/tv_comments_header_title"
+        android:layout_toRightOf="@+id/tv_comments_header_title"
+        android:layout_toEndOf="@+id/tv_comments_header_title" />
+
+    <ListView
+        style="@style/WrapContentStyle"
+        android:id="@android:id/list"
+        android:layout_below="@+id/tv_comments_header_title"
+        android:layout_above="@+id/et_comment"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:listSelector="@android:color/transparent"
+        android:divider="@null"/>
+
+    <com.artjoker.core.views.ArtJokerTextView
+        style="@style/SanSerifLight"
+        android:id="@android:id/empty"
+        android:text="@string/no_comments"
+        android:textAllCaps="true"
+        android:layout_centerInParent="true"
+        android:background="@color/category_grid_view_background"
+        android:padding="@dimen/empty_comments_padding"
+        android:visibility="gone"/>
+
+    <com.artjoker.core.views.ArtJokerButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_tab_height"
+        android:id="@+id/button_add_comment"
+        android:text="@string/add_comment"
+        android:textColor="@android:color/white"
+        android:background="@drawable/auth_buttons_background_selector"
+        android:paddingLeft="@dimen/advertisement_price_margin"
+        android:paddingRight="@dimen/advertisement_price_margin"
+        android:textStyle="normal"
+        android:fontFamily="@string/sans_serif_light"
+        android:textSize="@dimen/font_size_6_5pt"
+        android:layout_alignParentBottom="true" />
+
+    <com.artjoker.core.views.ArtJokerEditText
+        style="@style/SanSerifLight"
+        android:textSize="@dimen/font_size_5pt"
+        android:layout_width="match_parent"
+        android:layout_above="@id/button_add_comment"
+        android:id="@+id/et_comment"
+        android:hint="@string/comment_text_hint"
+        android:maxLines="2"/>
+</RelativeLayout>

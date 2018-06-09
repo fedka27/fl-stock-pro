@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="customFont" format="reference|string"/>
+    <declare-styleable name="ArtJokerEditText">
+        <attr name="customTextArray" format="reference"/>
+        <attr name="customFont"/>
+        <attr name="showErrorMessageIfLenghtLessThen" format="integer"/>
+        <attr name="showErrorMessageIfLenghtMoreThen" format="integer"/>
+        <attr name="errorMessageIfLenghtLessThen" format="reference|string"/>
+        <attr name="errorMessageIfLenghtMoreThen" format="reference|string"/>
+        <attr name="showErrorMessageForRegExp" format="reference|string"/>
+        <attr name="errorMessageForRegExp" format="reference|string"/>
+
+    </declare-styleable>
+    <declare-styleable name="ArtJokerTextView">
+        <attr name="customFont"/>
+    </declare-styleable>
+
+    <declare-styleable name="ArtJokerButton">
+        <attr name="customFont"/>
+    </declare-styleable>
+
+    <declare-styleable name="ArtJokerRadioButton">
+        <attr name="customFont"/>
+    </declare-styleable>
+
+    <declare-styleable name="ArtJokerCheckBox">
+        <attr name="customFont"/>
+    </declare-styleable>
+
+    <declare-styleable name="ArtJokerSearchView">
+        <attr name="searchViewIcon" format="reference"/>
+    </declare-styleable>
+
+</resources>

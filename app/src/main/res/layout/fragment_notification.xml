@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttons_container"
+        android:paddingLeft="@dimen/drawer_menu_left_padding"
+        android:paddingTop="@dimen/drawer_menu_left_padding"
+        android:paddingBottom="@dimen/drawer_menu_left_padding"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:paddingRight="@dimen/drawer_menu_left_padding">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/notificationRadioGroup"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_communication"
+                android:button="@null"
+                android:checked="false"
+                android:background="@drawable/tab_communication" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_likes"
+                android:button="@null"
+                android:layout_marginLeft="@dimen/button_notification_type_margin"
+                android:layout_marginRight="@dimen/button_notification_type_margin"
+                android:background="@drawable/tab_like" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_important"
+                android:button="@null"
+                android:paddingRight="5dp"
+                android:background="@drawable/tab_important" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.artjoker.core.views.ArtJokerTextView
+                style="@style/SanSerifLight"
+                android:id="@+id/tv_comm_title"
+                android:text="@string/comm_title"
+                android:textColor="@color/categories_text_color"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/font_size_6pt"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.09"></RelativeLayout>
+
+            <com.artjoker.core.views.ArtJokerTextView
+                style="@style/SanSerifLight"
+                android:id="@+id/tv_likes_title"
+                android:text="@string/rates_title"
+                android:textColor="@color/categories_text_color"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/font_size_6pt"
+                android:layout_marginRight="6dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.09"></RelativeLayout>
+
+            <com.artjoker.core.views.ArtJokerTextView
+                style="@style/SanSerifLight"
+                android:id="@+id/tv_imp_title"
+                android:text="@string/important_title"
+                android:textColor="@color/categories_text_color"
+                android:textSize="@dimen/font_size_6pt"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.artjoker.core.views.ArtJokerTextView
+        style="@style/WrapContentStyle"
+        android:id="@+id/tv_no_chats"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/no_notifications"
+        android:textSize="@dimen/font_size_7pt"
+        android:textStyle="italic"
+        android:textColor="@color/message_text_color"
+        android:visibility="gone"
+        android:gravity="center" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_notifications"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

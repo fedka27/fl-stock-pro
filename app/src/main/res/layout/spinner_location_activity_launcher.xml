@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/apptheme_color"
+    android:orientation="horizontal"
+    android:padding="@dimen/line_height">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/drawer_menu_left_padding">
+
+        <LinearLayout
+            android:id="@+id/spinner_location_activity_launcher_title_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/spinner_location_activity_launcher_location_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_size_4_5pt"
+                android:padding="@dimen/spinner_location_activity_launcher_text_padding"/>
+
+            <TextView
+                android:id="@+id/spinner_location_activity_launcher_parent_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_4pt"
+                android:textColor="@android:color/white"
+                android:padding="@dimen/spinner_location_activity_launcher_text_padding"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/arrow_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/spinner_location_activity_launcher_title_container">
+
+            <FrameLayout
+                android:layout_width="@dimen/spinner_location_activity_launcher_arrow_container_size"
+                android:layout_height="@dimen/spinner_location_activity_launcher_arrow_container_size"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/spinner_drop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/arrow_down_white" />
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

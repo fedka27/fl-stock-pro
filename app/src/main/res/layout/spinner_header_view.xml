@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/search_view_text_color"
+    android:orientation="horizontal"
+    android:padding="@dimen/line_height">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/vk_white"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/tv_spinner_city_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/search_view_text_color" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_spinner_city_hint" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/arrow_container"
+            android:layout_toRightOf="@id/tv_spinner_city_hint"
+            android:ellipsize="start"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textSize="@dimen/font_size_5pt"
+            android:textColor="@color/vk_black" />
+
+        <FrameLayout
+            android:id="@+id/arrow_container"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/search_view_text_color">
+
+            <FrameLayout
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="1dp"
+                android:background="@color/vk_white">
+
+                <ImageView
+                    android:id="@+id/spinner_drop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:src="@drawable/arrow_green_right" />
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

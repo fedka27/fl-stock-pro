@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:layout_width="@dimen/children_for_image_switcher_buttons_size"
+        android:layout_height="@dimen/children_for_image_switcher_buttons_size"
+        android:id="@+id/ib_left"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/round_button"
+        android:layout_marginLeft="@dimen/drawer_menu_left_padding"
+        android:src="@drawable/left_arrow_white" />
+
+    <ImageButton
+        android:layout_width="@dimen/children_for_image_switcher_buttons_size"
+        android:layout_height="@dimen/children_for_image_switcher_buttons_size"
+        android:id="@+id/ib_right"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/round_button"
+        android:layout_marginRight="@dimen/drawer_menu_left_padding"
+        android:src="@drawable/right_arrow_white" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/message_by_advert_height"
+        android:layout_height="@dimen/add_advert_text_top_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/black_transparent_color"
+        android:id="@+id/container_tv_of_count_images"
+        android:layout_marginRight="@dimen/drawer_menu_left_padding"
+        android:layout_marginBottom="@dimen/drawer_menu_left_padding">
+
+        <TextView
+            style="@style/WrapContentStyle"
+            android:text="@string/advert_image_group_default_count"
+            android:id="@+id/tv_current_index"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_slash"
+            android:layout_toStartOf="@+id/tv_slash"
+            android:textSize="@dimen/font_size_5pt"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            style="@style/WrapContentStyle"
+            android:text=" / "
+            android:id="@+id/tv_slash"
+            android:layout_alignTop="@+id/tv_current_index"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/font_size_5pt"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            style="@style/WrapContentStyle"
+            android:text="@string/advert_image_group_default_count"
+            android:id="@+id/tv_count_images"
+            android:layout_alignTop="@+id/tv_slash"
+            android:layout_toRightOf="@+id/tv_slash"
+            android:layout_toEndOf="@+id/tv_slash"
+            android:textSize="@dimen/font_size_5pt"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <com.stockroompro.views.AdvertPhotoSwitcher
+        style="@style/MatchParentStyle"
+        android:id="@+id/image_switcher"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="add_city_text_color">#a4a4a4</color>
+    <color name="add_foto_text_color">#949494</color>
+    <color name="message_color">#2d2d2d</color>
+
+    <color name="date_text_color">#8c8c8c</color>
+    <color name="advert_type_unselected_color">#c1c1c1</color>
+    <color name="to_be_used_color">#9b9b9b</color>
+
+    <color name="categories_text_color">#383838</color>
+
+    <color name="favourites_text_color">#949494</color>
+
+    <color name="green_header">#3cb371</color>
+    <color name="green_transparent">#ca3cb371</color>
+
+    <color name="location_and_date_text_color">#7e7e7e</color>
+    <color name="location_and_new_text_color">#464545</color>
+
+    <color name="message_text_color">#8c8c8c</color>
+
+    <color name="red_text_color">#ed0000</color>
+    <color name="phone_number_text_color">#7a7a7a</color>
+
+    <color name="search_view_background">#ededed</color>
+    <color name="search_view_text_color">#a4a4a4</color>
+
+    <color name="button_advert_preview_color">#9f9f9f</color>
+    <color name="black_transparent_color">#A6000000</color>
+    <color name="black_text_color">#000000</color>
+
+    <color name="category_grid_view_background">#EDEDED</color>
+    <color name="apptheme_color">#3cb371</color>
+    <color name="image_back_color">#fbfbfb</color>
+
+    <color name="advert_background">#f9f5f5</color>
+
+</resources>

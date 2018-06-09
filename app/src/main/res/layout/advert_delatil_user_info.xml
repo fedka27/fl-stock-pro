@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/person_details"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/drawer_menu_left_padding"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/fragment_one_advert_full_avatar_container"
+        android:layout_width="@dimen/seller_image_width"
+        android:layout_height="@dimen/seller_image_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="@dimen/drawer_menu_left_padding"
+        android:gravity="center">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_full_advert_seller_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            fresco:progressBarImage="@drawable/no_image"
+            fresco:failureImage="@drawable/no_image"
+            fresco:roundAsCircle="true"/>
+
+    </LinearLayout>
+
+    <com.artjoker.core.views.ArtJokerTextView
+        android:id="@+id/tv_full_advert_seller_name"
+        style="@style/WrapContentStyle"
+        android:layout_toEndOf="@+id/fragment_one_advert_full_avatar_container"
+        android:layout_toRightOf="@+id/fragment_one_advert_full_avatar_container"
+        android:paddingTop="@dimen/advertisement_text_title_size"
+        android:textColor="@color/categories_text_color"
+        android:textSize="@dimen/font_size_5pt" />
+
+    <com.artjoker.core.views.ArtJokerTextView
+        android:id="@+id/tv_profile_seller_phones"
+        style="@style/SanSerifLight"
+        android:layout_below="@+id/tv_full_advert_seller_name"
+        android:layout_marginBottom="@dimen/drawer_menu_left_padding"
+        android:layout_toEndOf="@+id/fragment_one_advert_full_avatar_container"
+        android:layout_toRightOf="@+id/fragment_one_advert_full_avatar_container"
+        android:textSize="@dimen/font_size_4pt" />
+
+    <RatingBar
+        android:id="@+id/rating_bar_full_advert_seller"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/drawer_menu_top_padding"
+        android:layout_below="@+id/tv_profile_seller_phones"
+        android:layout_marginLeft="@dimen/advertisement_location_margin"
+        android:layout_toEndOf="@+id/fragment_one_advert_full_avatar_container"
+        android:layout_toRightOf="@+id/fragment_one_advert_full_avatar_container"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:progressDrawable="@drawable/rating_bar_layers" />
+
+    <ImageButton
+        android:id="@+id/ib_full_advert_to_seller"
+        style="@style/WrapContentStyle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/enter_red" />
+</RelativeLayout>

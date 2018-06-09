@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/drawer_menu_left_padding">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.artjoker.core.views.ArtJokerEditText
+            style="@style/EditTextStyle"
+            android:id="@+id/et_reg_phone_1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="@dimen/font_size_6pt"
+            android:hint="@string/add_advert_phone_title"
+            android:layout_weight="1"
+            android:textCursorDrawable="@null"
+            android:textColor="@android:color/black"
+            android:layout_toLeftOf="@+id/button_likes"
+            android:layout_toStartOf="@+id/button_likes"
+            android:inputType="phone|text"
+            custom:showErrorMessageIfLenghtLessThen="@integer/phone_number_length"
+            custom:errorMessageIfLenghtLessThen="@string/phone_number_size_error" />
+
+        <ToggleButton
+            style="@style/WrapContentStyle"
+            android:textOff="@null"
+            android:textOn="@null"
+            android:id="@+id/button_likes"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/drawer_menu_left_padding"
+            android:checked="false"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/add_remove_selector"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/drawer_menu_left_padding" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/MatchParentStyle"
+    android:background="@android:color/white">
+    <com.artjoker.core.views.ArtJokerSearchView
+        android:id="@+id/sv_by_messages"
+        style="@style/SearchViewStyle"
+        android:queryHint="@string/search_by_categories"
+
+        />
+    <com.artjoker.core.views.ArtJokerTextView
+        style="@style/WrapContentStyle"
+        android:id="@+id/tv_no_chats"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/no_chats_by_advert"
+        android:textSize="@dimen/font_size_7pt"
+        android:textStyle="italic"
+        android:textColor="@color/message_text_color"
+        android:gravity="center" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_messages_by_advert"
+        />
+
+</LinearLayout>

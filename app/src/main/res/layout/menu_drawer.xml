@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchParentStyle"
+    android:background="@color/green_header"
+    android:fillViewport="true">
+
+    <ScrollView
+        android:id="@+id/scrl_view"
+        style="@style/MatchParentStyle"
+        android:background="@color/green_header"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/menuDrawerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green_header"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/menu_action_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green_header"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/logo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/line_height">
+
+                <com.artjoker.core.views.ArtJokerButton
+                    android:id="@+id/button_main_page"
+                    style="@style/MenuButtonsStyle"
+                    android:drawableLeft="@drawable/menu_button_left_icon_main_selector"
+                    android:text="@string/main_title" />
+
+                <com.artjoker.core.views.ArtJokerButton
+                    android:id="@+id/button_menu_login"
+                    style="@style/MenuButtonsStyle"
+                    android:drawableLeft="@drawable/menu_button_left_icon_login_selector"
+                    android:text="@string/menu_login_title" />
+
+                <com.artjoker.core.views.ArtJokerButton
+                    android:id="@+id/button_menu_add_advert"
+                    style="@style/MenuButtonsStyle"
+                    android:drawableLeft="@drawable/menu_button_left_icon_add_advert_selector"
+                    android:maxLines="1"
+                    android:text="@string/add_advert" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_notifications_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.artjoker.core.views.ArtJokerButton
+                        android:id="@+id/button_menu_notifications"
+                        style="@style/MenuButtonsStyle"
+                        android:drawableLeft="@drawable/menu_button_left_icon_notification_selector"
+                        android:text="@string/notification_title" />
+
+                    <com.artjoker.core.views.ArtJokerTextView
+                        android:id="@+id/tv_number_unread_notifications"
+                        android:layout_width="@dimen/change_pass_old_pass_bot_margin"
+                        android:layout_height="@dimen/change_pass_old_pass_bot_margin"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="@dimen/notification_undread_left_margin"
+                        android:layout_marginTop="@dimen/messages_unread_margin_top"
+                        android:background="@drawable/round_text_view_background"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/font_size_3_5pt" />
+                </RelativeLayout>
+
+                <com.artjoker.core.views.ArtJokerButton
+                    android:id="@+id/button_my_adverts"
+                    style="@style/MenuButtonsStyle"
+                    android:drawableLeft="@drawable/my_adds_selector"
+                    android:maxLines="1"
+                    android:text="@string/my_adverts_title" />
+
+                <com.artjoker.core.views.ArtJokerButton
+                    android:id="@+id/button_personal_account"
+                    style="@style/MenuButtonsStyle"
+                    android:drawableLeft="@drawable/menu_button_left_icon_account_selector"
+                    android:maxLines="1"
+                    android:text="@string/personal_account_title" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_messages_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.artjoker.core.views.ArtJokerButton
+                        android:id="@+id/button_menu_messages"
+                        style="@style/MenuButtonsStyle"
+                        android:drawableLeft="@drawable/menu_button_left_icon_messages_selector"
+                        android:text="@string/menu_message_title" />
+
+                    <com.artjoker.core.views.ArtJokerTextView
+                        android:id="@+id/tv_number_unread_messages"
+                        android:layout_width="@dimen/change_pass_old_pass_bot_margin"
+                        android:layout_height="@dimen/change_pass_old_pass_bot_margin"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignTop="@+id/button_menu_messages"
+                        android:layout_marginLeft="@dimen/messages_unread_margin_left"
+                        android:layout_marginTop="@dimen/messages_unread_margin_top"
+                        android:background="@drawable/round_text_view_background"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/font_size_3_5pt" />
+                </RelativeLayout>
+
+
+                <com.artjoker.core.views.ArtJokerButton
+                    android:id="@+id/button_menu_favourites"
+                    style="@style/MenuButtonsStyle"
+                    android:drawableLeft="@drawable/menu_button_left_icon_favourites_selector"
+                    android:text="@string/favourite_title" />
+
+                <com.artjoker.core.views.ArtJokerButton
+                    android:id="@+id/button_menu_exit"
+                    style="@style/MenuButtonsStyle"
+                    android:drawableLeft="@drawable/menu_button_left_icon_exit_selector"
+                    android:text="@string/menu_exit_title" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.artjoker.core.views.ArtJokerTextView
+                android:id="@+id/tv_copy_rights"
+                style="@style/WrapContentStyle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/change_pass_old_pass_bot_margin"
+                android:layout_marginTop="@dimen/change_pass_old_pass_bot_margin"
+                android:fontFamily="@string/sans_serif"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_size_6pt"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

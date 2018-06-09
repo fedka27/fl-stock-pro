@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_height"
+    android:background="@drawable/subcategory_background_selector"
+    android:clickable="false">
+
+    <ImageView
+        style="@style/WrapContentStyle"
+        android:id="@+id/iv_subcategory_icon"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/drawer_menu_left_padding" />
+
+    <com.artjoker.core.views.ArtJokerTextView
+        style="@style/WrapContentStyle"
+        android:id="@+id/tv_subcategory_name"
+        android:text="category"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_category_icon"
+        android:layout_toEndOf="@+id/iv_category_icon"
+        android:layout_marginLeft="@dimen/advertisement_price_margin"
+        android:textSize="@dimen/font_size_5pt"
+        android:textColor="@drawable/subcategory_text_selector" />
+
+    <ImageView
+        style="@style/WrapContentStyle"
+        android:id="@+id/iv_arrow"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/drawer_menu_left_padding"
+        android:background="@drawable/subcategory_arrow_selector"
+        android:clickable="false" />
+</RelativeLayout>

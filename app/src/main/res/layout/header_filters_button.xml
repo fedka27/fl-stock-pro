@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="@dimen/action_bar_height"
+    android:clickable="false"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/advertisement_text_price_size"
+    android:paddingTop="@dimen/advertisement_text_price_size"
+    android:paddingBottom="@dimen/advertisement_text_price_size">
+
+    <com.artjoker.core.views.ArtJokerTextView
+        style="@style/WrapContentStyle"
+        android:id="@+id/tv_filter_name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="@string/sans_serif_medium"
+        android:layout_toLeftOf="@+id/iv_filter_state_image"
+        android:textSize="@dimen/font_size_5pt"
+        android:lines="1"
+        android:textColor="@drawable/filter_header_button_text_selector" />
+
+    <com.artjoker.core.views.ArtJokerTextView
+        style="@style/SanSerifLight"
+        android:id="@+id/tv_filter_checked_item_name"
+        android:layout_below="@+id/tv_filter_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/iv_filter_state_image"
+        android:lines="1"
+        android:textSize="@dimen/font_size_3_5pt" />
+
+    <ImageView
+        style="@style/WrapContentStyle"
+        android:id="@+id/iv_filter_state_image"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/filter_header_button_icon_selector"
+        android:src="@drawable/filter_header_button_icon_selector"
+        android:layout_marginRight="@dimen/add_advert_text_top_margin" />
+</RelativeLayout>

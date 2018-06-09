@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_height"
+    android:weightSum="1"
+    android:orientation="horizontal"
+    android:layout_alignParentRight="true">
+
+
+    <RadioButton
+        style="@style/TypeAdvertStyle"
+        android:text="@string/add_advert_sell_title"
+        android:id="@+id/rb_sell"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center" />
+
+    <RadioButton
+        style="@style/TypeAdvertStyle"
+        android:text="@string/add_advert_trade_title"
+        android:id="@+id/rb_exchange"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/drawer_menu_left_padding"
+        android:gravity="center" />
+
+    <RadioButton
+        style="@style/TypeAdvertStyle"
+        android:text="@string/add_advert_free_title"
+        android:id="@+id/rb_free"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/drawer_menu_left_padding"
+        android:gravity="center" />
+
+</merge>

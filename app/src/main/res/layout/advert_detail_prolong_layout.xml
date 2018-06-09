@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_advert_extension_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="invisible">
+
+    <com.artjoker.core.views.ArtJokerTextView
+        android:id="@+id/my_advert_extension_date"
+        style="@style/SanSerifLight"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:text="@string/my_advert_extension_date_text"
+        android:textColor="@color/add_foto_text_color"
+        android:textSize="@dimen/font_size_5pt" />
+
+    <RelativeLayout
+        android:id="@+id/my_advert_extension_finished_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_advert_extension_date"
+        android:layout_marginTop="@dimen/extension_finished_container_margin"
+        android:background="@color/location_and_new_text_color">
+
+        <ImageView
+            android:id="@+id/extension_error_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/extension_text_margin_top"
+            android:background="@android:drawable/stat_notify_error"
+            android:text="@string/my_advert_extension_date_text" />
+
+        <com.artjoker.core.views.ArtJokerTextView
+            android:id="@+id/extension_finished_text"
+            style="@style/SanSerifLight"
+            android:layout_below="@+id/extension_error_image"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/extension_text_margin_top"
+            android:gravity="center"
+            android:text="@string/my_advert_extension_finished_text"
+            android:textColor="@color/vk_white"
+            android:textSize="@dimen/font_size_5pt" />
+
+        <com.artjoker.core.views.ArtJokerButton
+            android:id="@+id/extend_advert_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/extension_finished_text"
+            android:layout_margin="@dimen/extension_text_margin_top"
+            android:background="@drawable/auth_buttons_background_selector"
+            android:fontFamily="@string/sans_serif_light"
+            android:text="@string/extend_advert_button_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_6_5pt" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

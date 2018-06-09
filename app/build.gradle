@@ -1,0 +1,102 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.21.6'
+        classpath 'com.android.tools.build:gradle:2.2.2'
+    }
+}
+
+repositories {
+    maven { url 'http://download.crashlytics.com/maven' }
+}
+
+android {
+
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "com.stockroompro"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 76
+        versionName "0.7.6"
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+    }
+    signingConfigs {
+        debug {
+            keyAlias 'stockroompro'
+            keyPassword 'stockroompro'
+            storeFile file("$rootProject.projectDir/keystore/keystore.jks")
+            storePassword 'stockroompro'
+
+//            keyAlias 'androiddebugkey'
+//            keyPassword 'android'
+//            storeFile file("$rootProject.projectDir/keystore/debug.keystore")
+//            storePassword 'android'
+        }
+        release {
+
+            keyAlias 'stockroompro'
+            keyPassword 'stockroompro'
+            storeFile file("$rootProject.projectDir/keystore/keystore.jks")
+            storePassword 'stockroompro'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.2'
+    compile 'com.vk:androidsdk:1.3.3'
+    compile ("com.facebook.android:facebook-android-sdk:4.10.0"){
+        exclude group: 'com.parse.bolts',
+                module: 'bolts-tasks'
+        exclude group: 'com.parse.bolts',
+                module: 'bolts-applinks';}
+    compile 'com.github.castorflex.smoothprogressbar:library:0.5.2'
+
+    compile 'com.android.support:design:24.2.0'
+    compile 'com.android.support:cardview-v7:24.2.0'
+
+    compile 'com.facebook.fresco:fresco:0.14.1'
+
+    compile 'com.android.support:multidex:1.0.1'
+
+    compile project(':core')
+    compile project(':api')
+    compile project(':database')
+    compile project(':rangeseekbar')
+    compile project(':multipleimageselect')
+
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.6@aar') {
+        transitive = true;
+    }
+}

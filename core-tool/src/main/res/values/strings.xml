@@ -1,0 +1,12 @@
+<resources>
+    <string name="error_check_connection">Internet connection unavailable</string>
+
+    <string name="uah_abbreviation">UAH</string>
+    <string name="rub_abbreviation">RUB</string>
+    <string name="usd_abbreviation">USD</string>
+    <string name="eur_abbreviation">EUR</string>
+    <string name="uah_value">грн.</string>
+    <string name="rub_value">руб.</string>
+    <string name="usd_value">дол.</string>
+    <string name="eur_value">евро</string>
+</resources>

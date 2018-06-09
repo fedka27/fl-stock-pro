@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/message_by_advert_background_selector">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_advert_header_image"
+        android:layout_width="@dimen/message_by_advert_image_height"
+        android:layout_height="@dimen/message_by_advert_image_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        fresco:failureImage="@drawable/no_image"
+        fresco:progressBarImage="@drawable/no_image" />
+
+    <com.artjoker.core.views.ArtJokerTextView
+        style="@style/WrapContentStyle"
+        android:id="@+id/tv_advert_title"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="normal"
+        android:textSize="@dimen/font_size_5pt"
+        android:layout_alignTop="@+id/iv_advert_header_image"
+        android:layout_toRightOf="@+id/iv_advert_header_image"
+        android:layout_toEndOf="@+id/iv_advert_header_image"
+        android:singleLine="true" />
+
+    <com.artjoker.core.views.ArtJokerTextView
+        style="@style/WrapContentStyle"
+        android:id="@+id/tv_advert_price"
+        android:fontFamily="@string/sans_serif"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_size_6pt"
+        android:textColor="@color/red_text_color"
+        android:layout_alignBottom="@+id/iv_advert_header_image"
+        android:layout_toRightOf="@+id/iv_advert_header_image"
+        android:layout_toEndOf="@+id/iv_advert_header_image" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_advert_header_image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:background="@android:color/white"
+        android:id="@+id/ll_message_container">
+
+        <com.artjoker.core.views.ArtJokerTextView
+            style="@style/SanSerifLight"
+            android:id="@+id/tv_message_by_advert"
+            android:textSize="@dimen/font_size_6pt"
+            android:layout_margin="@dimen/advertisement_text_title_size"
+            android:textColor="@color/message_color" />
+
+        <com.artjoker.core.views.ArtJokerTextView
+            style="@style/SanSerifLight"
+            android:layout_below="@+id/tv_message_by_advert"
+            android:id="@+id/tv_message_by_advert_time_and_date"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/font_size_5pt"
+            android:layout_marginLeft="@dimen/advertisement_text_title_size"
+            android:textColor="@color/date_text_color" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/change_pass_title_padding"
+        android:id="@+id/iv_white_line"
+        android:layout_below="@+id/ll_message_container"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:background="@android:color/white"
+        android:adjustViewBounds="false"
+        android:layout_alignParentBottom="false" />
+
+
+</RelativeLayout>

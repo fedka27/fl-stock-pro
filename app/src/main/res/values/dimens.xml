@@ -1,0 +1,147 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+
+
+    <dimen name="action_bar_height">48dip</dimen>
+    <dimen name="profile_buttons_margin">10dp</dimen>
+    <dimen name="advertisement_height">95dp</dimen>
+    <dimen name="advertisement_item_height">100dp</dimen>
+    <dimen name="add_advert_radio_button_margin">30dp</dimen>
+    <dimen name="advertisement_image_height">100dp</dimen>
+    <dimen name="advertisement_image_width">105dp</dimen>
+    <dimen name="advertisement_location_margin">4dp</dimen>
+    <dimen name="advertisement_location_text_size">4dp</dimen>
+    <dimen name="profile_buttons_top_margin">4dp</dimen>
+    <dimen name="advertisement_price_margin">25dp</dimen>
+    <dimen name="advertisement_text_price_size">6dp</dimen>
+    <dimen name="advertisement_text_title_size">5dp</dimen>
+    <dimen name="add_advert_text_title_size">53dp</dimen>
+    <dimen name="add_advert_text_top_margin">20dp</dimen>
+    <dimen name="add_advert_state_button_width">150dp</dimen>
+    <dimen name="advert_description_grey_width">180dp</dimen>
+    <dimen name="exchange_bottom_padding">2dp</dimen>
+    <dimen name="filter_price_height">65dp</dimen>
+    <dimen name="line_height">1dp</dimen>
+
+    <dimen name="message_by_advert_image_height">55dp</dimen>
+    <dimen name="message_by_advert_height">50dp</dimen>
+    <dimen name="message_from_user_item_height">80dp</dimen>
+    <dimen name="messages_by_advert_item_height">130dp</dimen>
+
+
+    <dimen name="photo_height">240dp</dimen>
+    <dimen name="category_spacing">4dp</dimen>
+
+    <dimen name="change_pass_buttom_change_pass_padding">27dp</dimen>
+    <dimen name="change_pass_button_change_pass_top_margin">40dp</dimen>
+    <dimen name="change_pass_top_margin">22dp</dimen>
+    <dimen name="change_pass_desc_bot_margin">22dp</dimen>
+    <dimen name="change_pass_title_padding">8dp</dimen>
+    <dimen name="change_pass_pass_field_height">35dp</dimen>
+    <dimen name="change_pass_old_pass_bot_margin">15dp</dimen>
+    <dimen name="chat_text_field_height">50dp</dimen>
+
+    <dimen name="drawer_menu_left_padding">10dp</dimen>
+    <dimen name="drawer_menu_top_padding">12dp</dimen>
+    <dimen name="drawer_name_top_padding">16dp</dimen>
+
+    <dimen name="edit_button_height">35dp</dimen>
+
+    <dimen name="font_size_3_5pt">9sp</dimen>
+    <dimen name="font_size_4pt">10.5sp</dimen>
+    <dimen name="font_size_4_5pt">12sp</dimen>
+    <dimen name="font_size_5pt">13sp</dimen>
+    <dimen name="font_size_5_5pt">14.5sp</dimen>
+    <dimen name="font_size_6pt">16sp</dimen>
+    <dimen name="font_size_6_5pt">17sp</dimen>
+    <dimen name="font_size_7pt">19sp</dimen>
+
+
+    <dimen name="main_categories_margin">14dp</dimen>
+    <dimen name="menu_tab_height">45dp</dimen>
+    <dimen name="navigation_drawer_width">280dp</dimen>
+
+
+    <dimen name="search_view_main_page_padding">10dp</dimen>
+    <dimen name="search_view_height">37dp</dimen>
+    <dimen name="seller_image_height">80dp</dimen>
+    <dimen name="seller_image_width">80dp</dimen>
+    <dimen name="social_button_margin">130dp</dimen>
+    <dimen name="delete_padding_top">15dp</dimen>
+    <dimen name="delete_padding_drawable">15dp</dimen>
+    <dimen name="category_grid_item_padding">1dp</dimen>
+    <dimen name="category_grid_view_margin">10dp</dimen>
+    <dimen name="add_phone_button_margin">18dp</dimen>
+    <dimen name="advert_exchange_text_margin">3dp</dimen>
+    <dimen name="full_Advert_expandable_badge_padding">10dp</dimen>
+    <dimen name="advert_list_big_photo_price_margin">3dp</dimen>
+    <dimen name="progress_height">2dp</dimen>
+    <dimen name="progress_stroke_width">12dp</dimen>
+    <dimen name="progress_separator_width">28dp</dimen>
+    <dimen name="action_bar_buttons_margin">8dp</dimen>
+    <dimen name="button_profile_margin">40dp</dimen>
+    <dimen name="rating_bar_height">38dp</dimen>
+    <dimen name="rating_bar_padding">13dp</dimen>
+    <dimen name="tv_advert_spinner_item_padding">5dp</dimen>
+    <dimen name="tv_advert_spinner_item_margin">7dp</dimen>
+    <dimen name="add_advert_price_container_padding">2dp</dimen>
+    <dimen name="photo_image_size">150dp</dimen>
+    <dimen name="photo_image_margin">25dp</dimen>
+    <dimen name="delete_button_padding">11dp</dimen>
+    <dimen name="empty_comments_padding">20dp</dimen>
+    <dimen name="comment_adapter_padding">5dp</dimen>
+
+
+    <dimen name="rating_star_top_margin">20dp</dimen>
+    <dimen name="rating_star_right_margin">3dp</dimen>
+    <dimen name="rating_group_padding">55dp</dimen>
+    <dimen name="rating_dialog_width">240dp</dimen>
+    <dimen name="add_advert_photo_height">125dp</dimen>
+    <dimen name="filters_list_item_height">40dp</dimen>
+    <dimen name="filters_list_header_height">45dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="padding_click">4dp</dimen>
+    <dimen name="category_image_margin">20dp</dimen>
+    <dimen name="profile_messages_count_margin">8dp</dimen>
+    <dimen name="rating_dialog_margin">10dp</dimen>
+    <dimen name="preview_margin">15dp</dimen>
+    <dimen name="button_top_margin">2dp</dimen>
+    <dimen name="button_distance">50dp</dimen>
+    <dimen name="extension_finished_container_margin">10dp</dimen>
+    <dimen name="extension_text_margin_top">5dp</dimen>
+    <dimen name="advert_detail_title_margin">5dp</dimen>
+    <dimen name="star_padding">5dp</dimen>
+    <dimen name="button_add_size">30dp</dimen>
+    <dimen name="advert_detail_photo_diff_line_margin">5dp</dimen>
+    <dimen name="button_notification_type_margin">60dp</dimen>
+    <dimen name="notification_image_margin">20dp</dimen>
+    <dimen name="comment_text_min_width">120dp</dimen>
+    <dimen name="comment_text_max_width">250dp</dimen>
+    <dimen name="like_icon_padding">5dp</dimen>
+
+    <dimen name="messages_unread_margin_top">10dp</dimen>
+    <dimen name="messages_unread_margin_left">150dp</dimen>
+    <dimen name="notification_undread_left_margin">165dp</dimen>
+    <dimen name="search_settings_margin">10dp</dimen>
+    <dimen name="like_icon_margin_top">11dp</dimen>
+    <dimen name="like_size">13dp</dimen>
+    <dimen name="fragment_chat_advert_no_active_text_padding">15dp</dimen>
+    <dimen name="fragment_full_advert_filters_container_padding">3dp</dimen>
+    <dimen name="children_for_image_switcher_buttons_size">40dp</dimen>
+    <dimen name="spinner_location_activity_launcher_text_padding">1dp</dimen>
+    <dimen name="spinner_location_activity_launcher_arrow_container_size">50dp</dimen>
+    <dimen name="header_seller_list_view_phone_container_margin_bottom">5dp</dimen>
+    <dimen name="header_seller_list_view_phone_container_margin_top">15dp</dimen>
+    <dimen name="header_seller_list_view_phone_container_image_size">10dp</dimen>
+    <dimen name="header_seller_list_view_date_reg_margin_top">10dp</dimen>
+    <dimen name="adapter_comments_arrow_icon_margin">10dp</dimen>
+    <dimen name="adapter_comments_date_text_margin_top">3dp</dimen>
+    <dimen name="adapter_comments_text_margin_top">5dp</dimen>
+
+
+</resources>

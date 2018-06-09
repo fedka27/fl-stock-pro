@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    fresco:cardUseCompatPadding="true"
+    android:elevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@android:color/white">
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/radio_button_background_selector"
+            android:checked="false"
+            android:drawablePadding="@dimen/delete_padding_drawable"
+            android:drawableTop="@drawable/check_box_delete_from_favourites_icon_selector"
+            android:fontFamily="@string/sans_serif_light"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/delete_padding_top"
+            android:text="@string/delete_title"
+            android:textColor="@drawable/radio_button_text_color_selector"
+            android:textSize="@dimen/font_size_5pt"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_advert_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    fresco:failureImage="@drawable/no_image"
+                    fresco:progressBarImage="@drawable/no_image" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical">
+
+                <com.artjoker.core.views.ArtJokerTextView
+                    android:id="@+id/tv_advert_date"
+                    style="@style/LocationAndDateFields"
+                    android:layout_gravity="end"
+                    android:textSize="@dimen/font_size_4pt"
+                    tools:text="123213123" />
+
+                <com.artjoker.core.views.ArtJokerTextView
+                    android:id="@+id/tv_advert_title"
+                    style="@style/SanSerifMedium"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="@integer/title_lines"
+                    android:text="dkasldkl;sakd;sa;kdsakdl;sadkl;asdkla;slkd;aksdl;sadkldkl;sadkl;saaskl;dka;lsdkl;sadkl;klsad;kl;sadk"
+                    android:textSize="@dimen/font_size_5pt"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.artjoker.core.views.ArtJokerTextView
+                        android:id="@+id/tv_advert_price"
+                        style="@style/WrapContentStyle"
+                        android:ellipsize="middle"
+                        android:fontFamily="@string/sans_serif"
+                        android:gravity="left"
+                        android:maxLength="11"
+                        android:textColor="@color/red_text_color"
+                        android:textSize="@dimen/font_size_6pt"
+                        android:textStyle="bold"
+                        tools:text="1111111111 USD" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <com.artjoker.core.views.ArtJokerTextView
+                        android:id="@+id/tv_type"
+                        style="@style/WrapContentStyle"
+                        android:fontFamily="@string/sans_serif"
+                        android:gravity="end"
+                        android:singleLine="true"
+                        android:text="@string/sell_title"
+                        android:textColor="@color/green_header"
+                        android:textSize="@dimen/font_size_4pt"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="end">
+
+                    <com.artjoker.core.views.ArtJokerTextView
+                        android:id="@+id/tv_advert_location"
+                        style="@style/LocationAndDateFields"
+                        android:drawableStart="@drawable/location_marker"
+                        android:drawablePadding="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="@dimen/font_size_4pt"
+                        tools:text="Харьковk" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

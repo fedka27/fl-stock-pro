@@ -1,0 +1,232 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <item name="android:listChoiceIndicatorMultiple">@drawable/apptheme_btn_check_holo_light</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="WrapContentStyle" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+    <style name="MatchParentStyle" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+
+    </style>
+
+    <style name="LocationAndDateFields" parent="WrapContentStyle">
+        <item name="android:fontFamily">@string/sans_serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/location_and_date_text_color</item>
+        <item name="android:textSize">@dimen/advertisement_location_text_size</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:paddingRight">@dimen/drawer_menu_left_padding</item>
+        <item name="android:paddingLeft">@dimen/drawer_menu_left_padding</item>
+        <item name="android:background">@drawable/password_fields_border</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/change_pass_pass_field_height</item>
+
+    </style>
+    <style name="AddAdvertBigEditTextStyle" parent="EditTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">5</item>
+        <item name="android:gravity">top|left</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+    <style name="AdvertPriceEditText">
+        <item name="android:background">@color/vk_white</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">8</item>
+    </style>
+
+    <style name="SanSerifLight" parent="WrapContentStyle">
+        <item name="android:fontFamily">@string/sans_serif_light</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+    <style name="SanSerifBold" parent="WrapContentStyle">
+        <item name="android:fontFamily">@string/sans_serif_light</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="SanSerifMedium" parent="WrapContentStyle">
+        <item name="android:fontFamily">@string/sans_serif_medium</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+    <style name="LoginButton">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@string/sans_serif_light</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@drawable/auth_buttons_background_selector</item>
+
+
+    </style>
+    <style name="RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">@dimen/add_advert_state_button_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/radio_button_background_selector</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@drawable/radio_button_text_color_selector</item>
+
+
+    </style>
+
+    <style name="FilterRadioButton" parent="RadioButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/font_size_4_5pt</item>
+        <item name="android:layout_height">@dimen/add_advert_radio_button_margin</item>
+        <item name="android:drawableRight">@drawable/radio_button_drawable_right_selector</item>
+        <item name="android:paddingRight">@dimen/add_advert_text_top_margin</item>
+        <item name="android:paddingLeft">@dimen/drawer_menu_left_padding</item>
+    </style>
+
+    <style name="TypeAdvertStyle" parent="RadioButton">
+        <item name="android:layout_width">@dimen/advertisement_height</item>
+        <item name="android:background">@drawable/radio_button_type_background_selector</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_weight">0.3</item>
+
+
+    </style>
+    <style name="NumberOfSymbolsStyle" parent="WrapContentStyle">
+        <item name="android:textSize">@dimen/font_size_4pt</item>
+        <item name="android:textColor">@color/location_and_date_text_color</item>
+
+    </style>
+
+    <style name="ToogleButtonActiveAdvertStyle" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:textSize">@dimen/font_size_4pt</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textOn">@string/advert_active_title</item>
+        <item name="android:textOff">@string/advert_inactive_title</item>
+        <item name="android:drawableLeft">@drawable/tb_active_advert_icon_selector</item>
+        <item name="android:background">@drawable/tb_active_advert_background_selector</item>
+
+    </style>
+
+
+    <style name="SearchViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/search_view_height</item>
+        <item name="android:layout_margin">@dimen/search_view_main_page_padding</item>
+        <item name="android:background">@color/search_view_background</item>
+    </style>
+
+    <style name="DiffLineStyle">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_height</item>
+        <item name="android:background">@color/favourites_text_color</item>
+
+    </style>
+    <style name="ProfileButtonsStyle">
+        <item name="android:drawablePadding">@dimen/drawer_name_top_padding</item>
+        <item name="android:paddingLeft">@dimen/drawer_name_top_padding</item>
+        <item name="android:fontFamily">@string/sans_serif_light</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/font_size_6pt</item>
+        <item name="android:layout_marginLeft">@dimen/drawer_menu_left_padding</item>
+        <item name="android:textColor">@drawable/radio_button_text_color_selector</item>
+        <item name="android:layout_marginTop">@dimen/drawer_menu_left_padding</item>
+        <item name="android:layout_marginRight">@dimen/drawer_menu_top_padding</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/edit_button_height</item>
+        <item name="android:background">@drawable/radio_button_background_selector</item>
+
+    </style>
+
+    <style name="LocationMarkerStyle" parent="WrapContentStyle">
+        <item name="android:background">@drawable/location_marker</item>
+    </style>
+
+    <style name="ProfilePreviewPageButtonsStyle" >
+
+        <item name="android:drawableRight">@drawable/button_profile_drawable_selector</item>
+        <item name="android:paddingRight">@dimen/drawer_menu_left_padding</item>
+        <item name="android:textColor">@drawable/radio_button_text_color_selector</item>
+        <item name="android:background">@drawable/radio_button_background_selector</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@string/sans_serif_light</item>
+        <item name="android:textSize">@dimen/font_size_6_5pt</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+
+    </style>
+    <style name="ProfileTextViewStyle" parent="SanSerifLight" >
+        <item name="android:textSize">@dimen/font_size_4_5pt</item>
+        <item name="android:textColor">@color/phone_number_text_color</item>
+    </style>
+    <style name="MenuButtonsStyle" >
+
+        <item name="android:drawablePadding">@dimen/drawer_menu_left_padding</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/line_height</item>
+        <item name="android:layout_height">@dimen/menu_tab_height</item>
+        <item name="android:background">@drawable/menu_button_background_selector</item>
+         <item name="android:textStyle">normal</item>
+         <item name="android:fontFamily">@string/sans_serif_light</item>
+        <item name="android:textColor">@drawable/menu_button_text_selector</item>
+        <item name="android:paddingLeft">@dimen/drawer_menu_left_padding</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="SpinnerStyle">
+        <item name="android:background">@drawable/password_fields_border</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/change_pass_pass_field_height</item>
+    </style>
+
+    <style name="RatingStarStyle">
+        <item name="android:src">@drawable/star_red</item>
+        <item name="android:layout_marginRight">@dimen/rating_star_right_margin</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="RatingStarContainerStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="RatingStarRadioButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingTop">@dimen/rating_dialog_margin</item>
+        <item name="android:paddingBottom">@dimen/rating_dialog_margin</item>
+    </style>
+
+    <style name="GNowProgressBar" parent="SmoothProgressBar">
+        <item name="spb_stroke_separator_length">5dp</item>
+        <item name="spb_sections_count">5</item>
+        <item name="spb_speed">0.7</item>
+        <item name="spb_progressiveStart_speed">0.7</item>
+        <item name="spb_progressiveStop_speed">0.5</item>
+        <item name="spb_interpolator">spb_interpolator_acceleratedecelerate</item>
+        <item name="spb_mirror_mode">false</item>
+        <item name="spb_reversed">false</item>
+        <item name="spb_color">@android:color/white</item>
+        <item name="spb_progressiveStart_activated">false</item>
+    </style>
+
+</resources>

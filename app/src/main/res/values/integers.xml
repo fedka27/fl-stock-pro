@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="columns_in_categories">2</integer>
+    <integer name="very_short_animation_duration">150</integer>
+    <integer name="password_length">6</integer>
+    <integer name="phone_number_length">10</integer>
+    <integer name="name_length">1</integer>
+    <integer name="spinner_holder_tag_key">0</integer>
+    <integer name="spinner_item_tag_key">1</integer>
+    <integer name="title_lines">2</integer>
+
+    <integer name="dislike_tag">150</integer>
+    <integer name="dislike_item_tag">6666</integer>
+    <integer name="like_item_tag">7777</integer>
+    <integer name="reply_item_tag">8888</integer>
+    <integer name="go_to_seller_item_tag">9999</integer>
+    <integer name="filter_name_key">1234</integer>
+    <integer name="filter_id_key">1233</integer>
+</resources>

@@ -1,0 +1,6 @@
+<resources>
+
+    <dimen name="slide_positive_value">320dp</dimen>
+    <dimen name="slide_negative_value">-320dp</dimen>
+
+</resources>

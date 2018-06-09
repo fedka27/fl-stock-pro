@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/filters_list_header_height"
+    android:id="@+id/spinner_item_container">
+
+    <TextView
+        android:id="@+id/tv_filter_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/vk_white"
+        android:gravity="center_vertical|right"
+        android:padding="@dimen/tv_advert_spinner_item_padding"
+        android:textColor="#000000"></TextView>
+</LinearLayout>

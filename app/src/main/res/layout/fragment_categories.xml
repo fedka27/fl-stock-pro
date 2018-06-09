@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchParentStyle"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.artjoker.core.views.ArtJokerSearchView
+            style = "@style/SearchViewStyle"
+            android:id="@+id/category_search_view"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/font_size_5pt"
+            android:layout_toLeftOf="@+id/button_change_search_type"
+            android:layout_toStartOf="@+id/button_change_search_type" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_change_search_type"
+            android:src="@drawable/button_filters_selector"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/search_settings_margin" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/categories_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="@integer/columns_in_categories"
+        android:stretchMode="columnWidth"
+        tools:listitem="@layout/adapter_category"
+        android:layout_marginRight="@dimen/category_grid_view_margin"
+        android:layout_marginLeft="@dimen/category_grid_view_margin"
+        android:layout_marginBottom="@dimen/category_grid_view_margin"/>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    style="@style/MatchParentStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/MatchParentStyle"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/drawer_menu_left_padding"
+        android:paddingRight="@dimen/drawer_menu_left_padding"
+        android:paddingBottom="@dimen/action_bar_height">
+
+    <com.artjoker.core.views.ArtJokerTextView
+        style="@style/SanSerifLight"
+        android:id="@+id/tv_login_title"
+        android:text="@string/login_title"
+        android:layout_marginTop="@dimen/change_pass_top_margin"
+        android:layout_marginBottom="@dimen/change_pass_top_margin"
+        android:textColor="@color/categories_text_color"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/font_size_7pt" />
+
+    <com.artjoker.core.views.ArtJokerEditText
+         style="@style/EditTextStyle"
+        android:id="@+id/et_login_email"
+
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="@dimen/change_pass_old_pass_bot_margin"
+        android:hint="@string/email"
+        android:textSize="@dimen/font_size_5pt" />
+
+    <com.artjoker.core.views.ArtJokerEditText
+        style="@style/EditTextStyle"
+        android:id="@+id/et_login_pass"
+        android:inputType="textPassword"
+        android:hint="@string/registration_password_title"
+        android:textSize="@dimen/font_size_5pt"
+        custom:errorMessageIfLenghtLessThen="@string/password_error"
+        custom:showErrorMessageIfLenghtLessThen="@integer/password_length"
+        />
+
+    <com.artjoker.core.views.ArtJokerButton
+        style="@style/LoginButton"
+        android:id="@+id/button_login"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/login_title"
+        android:layout_marginTop="@dimen/change_pass_button_change_pass_top_margin"
+        android:layout_marginBottom="@dimen/change_pass_old_pass_bot_margin"
+        android:textSize="@dimen/font_size_6pt" />
+
+    <com.artjoker.core.views.ArtJokerButton
+        style="@style/LoginButton"
+        android:id="@+id/button_forgot_password"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:text="@string/login_forgot_password"
+        android:textSize="@dimen/font_size_6pt"
+        android:clickable="true"
+        android:layout_marginBottom="@dimen/change_pass_old_pass_bot_margin" />
+    <com.artjoker.core.views.ArtJokerButton
+        style="@style/LoginButton"
+        android:id="@+id/button_go_to_registration"
+        android:layout_width="match_parent"
+        android:text="@string/registration_title"
+        android:textSize="@dimen/font_size_6pt"
+        android:clickable="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/action_bar_height">
+        <ImageButton
+            style="@style/WrapContentStyle"
+            android:id="@+id/button_login_vk"
+            android:background="@drawable/vk_selector"
+            android:layout_toLeftOf="@+id/textView"
+            android:layout_toStartOf="@+id/textView"
+            android:layout_marginRight="@dimen/add_advert_radio_button_margin" />
+
+        <ImageButton
+
+
+            style="@style/WrapContentStyle"
+            android:id="@+id/button_login_facebook"
+            android:background="@drawable/fb_selector"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_marginLeft="@dimen/add_advert_radio_button_margin"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textSize="@dimen/font_size_5pt"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

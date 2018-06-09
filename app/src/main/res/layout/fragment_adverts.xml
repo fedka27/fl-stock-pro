@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <com.artjoker.core.views.ArtJokerSearchView
+        style="@style/SearchViewStyle"
+        android:id="@+id/sv_by_atv"
+        android:queryHint="@string/search_by_atv"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/button_filters"
+        android:layout_toStartOf="@+id/button_filters"
+        android:textSize="@dimen/font_size_5pt"/>
+
+    <ImageView
+        style="@style/WrapContentStyle"
+        android:id="@+id/button_filters"
+        android:src="@drawable/button_filters_selector"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/sv_by_atv"
+        android:layout_alignTop="@id/sv_by_atv"
+        android:scaleType="centerInside"
+        android:layout_marginRight="@dimen/search_settings_margin" />
+
+    <ListView
+        style="@style/WrapContentStyle"
+        android:id="@+id/lv_adverts"
+        android:divider="@android:color/transparent"
+        android:padding="8dp"
+        android:dividerHeight="4dp"
+        android:layout_below="@+id/sv_by_atv" />
+
+    <com.artjoker.core.views.ArtJokerTextView
+        style="@style/SanSerifLight"
+        android:id="@android:id/empty"
+        android:text="@string/no_adverts_in_catalog"
+        android:textAllCaps="true"
+        android:layout_centerInParent="true"
+        android:background="@color/category_grid_view_background"
+        android:padding="@dimen/empty_comments_padding"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/fragment_adverts_search_text"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAllCaps="true"
+        android:layout_centerInParent="true"
+        android:background="@color/category_grid_view_background"
+        android:text="Поиск..."
+        android:visibility="gone"/>
+
+</RelativeLayout>

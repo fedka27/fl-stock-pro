@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchParentStyle">
+
+    <LinearLayout xmlns:custom="http://schemas.android.com/apk/res/com.stockroompro"
+        android:layout_width="match_parent"
+        android:id="@+id/fragment_one_advert_full_ver2_main_container"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/image_switcher_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_empty_photo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/photo_height"
+                android:src="@drawable/no_image" />
+
+            <com.stockroompro.views.AdvertPhotoGroup
+                android:id="@+id/photo_switcher_advert_photos"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/photo_height"
+                android:background="@color/black_transparent_color" />
+        </FrameLayout>
+
+        <com.artjoker.core.views.ArtJokerTextView
+            android:id="@+id/advert_detail_photos_diff_line"
+            style="@style/DiffLineStyle"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="@dimen/advert_detail_photo_diff_line_margin"
+            android:textSize="@dimen/font_size_5pt" />
+
+        <LinearLayout
+            style="@style/MatchParentStyle"
+            android:orientation="vertical"
+            android:padding="@dimen/drawer_menu_left_padding">
+
+            <ToggleButton
+                android:id="@+id/advert_detail_active_toggle"
+                style="@style/ToogleButtonActiveAdvertStyle"
+                android:layout_height="26dp"
+                android:checked="false"
+                android:clickable="false"
+                android:drawablePadding="@dimen/advertisement_text_title_size"
+                android:enabled="false"
+                android:focusable="false"
+                android:paddingLeft="@dimen/change_pass_title_padding"
+                android:paddingRight="@dimen/change_pass_title_padding"
+                android:visibility="gone" />
+
+            <com.artjoker.core.views.ArtJokerTextView
+                android:id="@+id/tv_one_advert_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/advert_detail_title_margin"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/categories_text_color"
+                android:textSize="@dimen/font_size_5pt" />
+
+            <com.artjoker.core.views.ArtJokerTextView
+                android:id="@+id/tv_one_advert_category_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/advert_detail_title_margin"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/categories_text_color"
+                android:textSize="@dimen/font_size_5pt" />
+
+            <com.artjoker.core.views.ArtJokerTextView
+                android:id="@+id/tv_one_advert_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/advert_detail_title_margin"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/categories_text_color"
+                android:textSize="@dimen/font_size_7pt" />
+
+            <include layout="@layout/advert_detail_info_layout"/>
+
+            <LinearLayout
+                android:id="@+id/rl_full_advert_container_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/advertisement_price_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <com.stockroompro.views.ExpandableTextView
+                    android:id="@+id/etv_full_advert_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.25"
+                    android:textColor="@color/black_text_color"
+                    android:textSize="@dimen/font_size_5pt"
+                    custom:animDuration="400"
+                    custom:animProtectionTime="65" />
+
+                <FrameLayout
+                    android:id="@+id/fl_full_advert_description_expander"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/full_Advert_expandable_badge_padding">
+
+                    <View
+                        android:id="@+id/v_full_advert_description_badge"
+                        android:layout_width="10dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/expandable_text_view_arrow" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/ll_full_advert_filters_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingBottom="@dimen/fragment_full_advert_filters_container_padding"
+                android:paddingRight="@dimen/fragment_full_advert_filters_container_padding"
+                android:paddingTop="@dimen/fragment_full_advert_filters_container_padding">
+
+                <com.artjoker.core.views.ExpandableHeightGridView
+                    android:id="@+id/fragment_full_advert_filters_grid_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="2dp"
+                    android:isScrollContainer="false"
+                    android:numColumns="auto_fit"
+                    android:verticalSpacing="2dp" />
+
+            </FrameLayout>
+
+            <com.artjoker.core.views.ArtJokerButton
+                android:id="@+id/button_full_advert_to_comments"
+                style="@style/SanSerifLight"
+                android:layout_width="match_parent"
+                android:background="@drawable/auth_buttons_background_selector"
+                android:text="@string/comments_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_size_6_5pt" />
+
+            <include layout="@layout/advert_detail_buttons_layout"/>
+
+            <com.artjoker.core.views.ArtJokerTextView
+                android:id="@+id/diff_line_full_advert"
+                style="@style/DiffLineStyle"
+                android:layout_marginBottom="@dimen/drawer_menu_top_padding"
+                android:textSize="@dimen/font_size_5pt" />
+
+            <FrameLayout
+                android:id="@+id/advert_seller_profile_and_extension_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/advert_detail_prolong_layout" />
+
+                <include layout="@layout/advert_delatil_user_info"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

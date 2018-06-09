@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+apply from: "$rootProject.projectDir/gradle-scripts/base.gradle"
+
+android {
+        compileSdkVersion 23
+        buildToolsVersion "20.0.0"
+
+    buildTypes {
+
+        debug {
+            buildConfigField "String", "HOST", "\"http://dev.autoplanet.pro\""
+            buildConfigField "String", "PATH", "\"/api\""
+            buildConfigField "String", "SERVER_APP_ID", "\"23412432543543\""
+            buildConfigField "String", "SERVER_APP_KEY", "\"J0(`:dsa2Ff@)_-?>:a9/=@`D2-:\\\"6h!?_2)3Sd+72.@RE-90!/4sae=38\""
+        }
+
+        release {
+            buildConfigField "String", "HOST", "\"http://dev.autoplanet.pro\""
+            buildConfigField "String", "PATH", "\"/api\""
+            buildConfigField "String", "SERVER_APP_ID", "\"23412432543543\""
+            buildConfigField "String", "SERVER_APP_KEY", "\"J0(`:dsa2Ff@)_-?>:a9/=@`D2-:\\\"6h!?_2)3Sd+72.@RE-90!/4sae=38\""
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':core-tool')
+    compile project(':models')
+}

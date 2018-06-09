@@ -1,0 +1,9 @@
+<resources>
+
+    <dimen name="rating_bar_height">48dp</dimen>
+
+    <dimen name="rating_bar_padding">18dp</dimen>
+    <dimen name="navigation_drawer_width">400dp</dimen>
+    <dimen name="button_notification_type_margin">100dp</dimen>
+
+</resources>

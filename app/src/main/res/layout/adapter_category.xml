@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/category_grid_view_background"
+    android:paddingBottom="@dimen/category_grid_item_padding"
+    android:paddingLeft="@dimen/category_grid_item_padding"
+    android:paddingRight="@dimen/category_grid_item_padding"
+    android:paddingTop="@dimen/category_grid_item_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@android:color/white">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/categoryImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            fresco:actualImageScaleType="centerInside"
+            fresco:failureImage="@drawable/no_image"
+            fresco:progressBarImage="@drawable/no_image" />
+
+        <com.artjoker.core.views.ArtJokerTextView
+            android:id="@+id/categoryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/font_size_5pt"
+            tools:text="Medium Text" />
+    </LinearLayout>
+</FrameLayout>

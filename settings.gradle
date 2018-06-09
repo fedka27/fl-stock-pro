@@ -1,0 +1,3 @@
+include ':app', ':core', ':core-tool', ':fragments-tool',
+        ':api', ':database', ':models', ':rangeseekbar', ':multipleimageselect'
+project(':multipleimageselect').projectDir = new File('multipleimage/multipleimageselect')

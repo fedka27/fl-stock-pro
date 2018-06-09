@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:gravity="left">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <LinearLayout
+                android:id="@+id/adapter_chat_message_output_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/incoming_message"
+                android:gravity="center">
+
+                <com.artjoker.core.views.ArtJokerTextView
+                    android:id="@+id/tv_message_in_chat"
+                    style="@style/SanSerifLight"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:textColor="@color/message_color"
+                    android:textSize="@dimen/font_size_6pt" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.artjoker.core.views.ArtJokerTextView
+            android:id="@+id/tv_message_date"
+            style="@style/SanSerifLight"
+            android:singleLine="true"
+            android:layout_gravity="right"
+            android:textSize="@dimen/font_size_4pt" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

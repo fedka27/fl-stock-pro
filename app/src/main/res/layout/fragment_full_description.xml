@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.artjoker.core.views.ArtJokerTextView
+        style="@style/WrapContentStyle"
+        android:id="@+id/tv_full_description"
+        android:layout_marginLeft="@dimen/drawer_menu_left_padding"
+        android:layout_marginRight="@dimen/drawer_menu_left_padding"
+        android:layout_marginTop="@dimen/drawer_menu_top_padding"
+        android:layout_marginBottom="@dimen/drawer_menu_top_padding"
+        android:nestedScrollingEnabled="false"
+        android:textSize="@dimen/font_size_6pt"
+        android:textColor="@color/message_color"
+        android:text="@string/change_password_description" />
+</LinearLayout>

@@ -1,0 +1,274 @@
+<resources>
+    <string name="app_name">AutoPlanet</string>
+    <string name="main_name">AutoPlanetPro</string>
+    <string name="facebook_app_id">1831553227167085</string>
+    <string name="personal_messages_title">Личные сообщения</string>
+
+    <string name="add_advert">Добавить объявление</string>
+    <string name="add_advert_city">Город</string>
+    <string name="add_advert_category_title">Категория</string>
+    <string name="add_advert_phone_title">Телефон</string>
+    <string name="advert_title">Заголовок объявления</string>
+    <string name="add_advert_description_title">Описание</string>
+    <string name="add_advert_new_title">Новый</string>
+
+    <string name="add_advert_to_be_used_title">Б/у</string>
+    <string name="add_advert_sell_title">Продажа</string>
+    <string name="add_advert_trade_title">Обмен</string>
+    <string name="add_advert_free_title">Бесплатно</string>
+    <string name="add_advert_add_photo_title">Добавить фото</string>
+    <string name="add_advert_preview_title">Предпросмотр</string>
+    <string name="add_advert_publish_title">Опубликовать</string>
+    <string name="add_advert_max_symb_description">/ 2000 символов</string>
+    <string name="add_advert_max_symb_title">/ 60 символов</string>
+    <string name="advert_text_title">Объявление</string>
+    <string name="advert_active_title">Активно</string>
+    <string name="advert_inactive_title">Неактивно</string>
+    <string name="add_advert_default_symb_title">0</string>
+
+    <string name="my_advert_title">Мои объявления</string>
+    <string name="add_advert_description">Срок жизни объявления составляет 30 дней,\nпосле чего вам необходимо продлить его, просто\n
+       нажав соответствующую кнопку в объявлении,\nтем самым подтвердив актуальность содержания\nи условий. В противном случае, объявление\nне будет
+        отображаться в каталоге.\n\n Я соглашаюсь с условиями использования сервиса, \n а также с передачей и обработкой моих данных в AutoPlanetPro.
+        Я подтверждаю свою ответственность за размещение объявления." \n\n <a href="http://autoplanet.pro/terms-of-use">Условия использования</a> </string>
+    <string name="change_password_description">Придумайте сложный пароль длинной от 6 символов с цифрами,
+        прописными и заглавными буквами. Это обеспечит максимальную безопасность вашего профиля</string>
+    <string name="change_password_title">Смена пароля</string>
+    <string name="chat_hint">Текст сообщения</string>
+    <string name="email">E-mail</string>
+    <string name="social_network_never_used">Ваш профиль не привязан к социальным сетям. Войдите через социальную сеть.</string>
+    <string name="social_synchronize_title">Синхронизировать профиль</string>
+
+
+    <string name="old_password_title">Старый пароль</string>
+    <string name="new_password_title">Новый пароль</string>
+    <string name="edit_title">Изменить</string>
+    <string name="edit_profile_title">Редактировать профиль</string>
+    <string name="delete_profile_title">Удалить профиль</string>
+    <string name="edit_password_title">Изменить пароль</string>
+    <string name="delete_title">Удалить</string>
+
+    <string name="message_text_title">Текст сообщения</string>
+    <string name="menu_bottom_text">AutoPlanetPro &#169; %1$d</string>
+    <string name="main_title">Главная</string>
+    <string name="login_title">Входите, мы соскучились</string>
+    <string name="login_forgot_password">Забыли пароль ?</string>
+    <string name="name_title">Имя</string>
+    <string name="last_name_title">Фамилия</string>
+    <string name="name_description"> (отображается в профиле, переписках, ваших объявлениях)</string>
+    <string name="notification_title">Уведомления</string>
+
+    <string name="registration_title">Регистрация</string>
+    <string name="registration_text">Мы давно Вас ждем</string>
+    <string name="registration_login_hint">Имя пользователя</string>
+    <string name="registration_login_descr">Будет отображаться в профиле, переписках, созданных объявлениях</string>
+    <string name="registration_button_text">Зарегистрироваться</string>
+    <string name="registration_login_title">Логин</string>
+    <string name="registration_password_title">Пароль</string>
+    <string name="registration_repeat_password">Пароль еще раз</string>
+    <string name="rate_title">Рейтинг</string>
+    <string name="rate_action">Оценить</string>
+    <string name="rate_number_string">%s оценок</string>
+    <string name="restore_password_text">Забыли пароль? Ничего страшного! Введите свой Email, и мы вышлем Вам новый пароль</string>
+    <string name="restore_password_button_text">Выслать пароль</string>
+
+    <string name="send_message_title">Отправить</string>
+    <string name="sans_serif">sans-serif</string>
+    <string name="sans_serif_light">sans-serif-light</string>
+    <string name="sans_serif_medium">sans-serif-medium</string>
+    <string name="search_by_atv">Поиск в ATV</string>
+    <string name="search_by_messages">Поиск по сообщениям</string>
+    <string name="search_by_categories">Поиск объявлений</string>
+    <string name="save_changes">Сохранить изменения</string>
+    <string name="auction_title">Торг:</string>
+    <string name="font">racing_sans_one.ttf</string>
+    <string name="filters">Фильтры</string>
+    <string name="reset_filters">Сбросить</string>
+    <string name="filter_sort">Сортировка</string>
+    <string name="filter_be_used">Новые, б/у</string>
+    <string name="filter_sale_exchange_free">Платные, обмен, бесплатные</string>
+    <string name="filter_more">Еще фильтры</string>
+    <string name="menu_login_title">Войти</string>
+    <string name="personal_account_title">Личный кабинет</string>
+    <string name="menu_message_title">Сообщения</string>
+    <string name="menu_exit_title">Выйти</string>
+
+
+    <string name="phone_number_size_error">Введите номер длиной от 10 символов</string>
+
+    <string name="password_error">Введите пароль длинной от 6 символов</string>
+
+    <string name="comments_big_title">КОММЕНТАРИИ</string>
+    <string name="comments_title">Комментарии</string>
+    <string name="call_title">Позвонить</string>
+    <string name="write_title">Написать</string>
+    <string name="to_favourite_title">В избранное</string>
+    <string name="favourite_title">Избранное</string>
+    <string name="edit_advert_title">Редактирование объявления</string>
+    <string name="auction_possible">Возможен торг</string>
+    <string name="auction_impossible">Торг невозможен</string>
+    <string name="price_title">Цена</string>
+    <string name="warning_add_max_photo_count_title">Добавлено максимальное\n количество фото - %d</string>
+    <string name="user_banned">Пользователь забанен</string>
+    <string name="user_not_active">Потвердите регистрацию через Email</string>
+
+    <string name="searchText">Поиск пользователей</string>
+    <string name="comment_count">( %d )</string>
+    <string name="full_advert_bagrain_true">есть</string>
+    <string name="full_advert_bagrain_false">нет</string>
+    <string name="full_advert_is_used_false">Новый</string>
+    <string name="full_advert_is_used_true">Б/у</string>
+    <string name="not_name">Not name</string>
+
+    <string name="chooser_text">Выберите изображение :</string>
+    <string name="no_comments">Нет комментариев</string>
+    <string name="no_favourites">В избранном пусто</string>
+    <string name="no_adverts_in_catalog">В данной категории нет объявлений</string>
+    <string name="add_comment">Добавить комментарий</string>
+    <string name="you">Вы</string>
+    <string name="comment_text_hint">Текст комментария</string>
+    <string name="comment_text_error">Введите текст комментария</string>
+    <string name="dialog_message_dont_send_text">Сообщение не отправлено</string>
+    <string name="dialog_message_retry_text">Повторить</string>
+    <string name="tv_spinner_header_view_city_hint">Город</string>
+    <string name="tv_spinner_header_view_category_hint">Категория</string>
+
+    <string name="spinner_holder_tag_key">0</string>
+    <string name="spinner_item_tag_key">1</string>
+    <string name="add_advert_price_title">Цена</string>
+    <string name="add_advert_bargain">Возможен торг</string>
+
+    <string-array name="spinner_price_currency">
+        <item>UAH</item>
+        <item>RUB</item>
+        <item>USD</item>
+        <item>EURO</item>
+    </string-array>
+
+    <string name="rate_dialog_title">Оцените продавца</string>
+    <string name="rate_dialog_error_title">Ошибка !</string>
+    <string name="rate_dialog_error_text">Вы не можете поставить оценку самому себе !</string>
+    <string name="rate_dialog_error_ok_text">Хорошо</string>
+    <string name="seller_number_ads_title">ОБЪЯВЛЕНИЙ: %s</string>
+
+    <string name="warning">Внимание !</string>
+    <string name="warning_exit">Вы действительно хотите выйти ?</string>
+    <string name="warning_delete_profile">Вы действительно хотите удалить Ваш профиль ?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="in_messages_text">сообщениях</string>
+    <string name="no_phone_number">Номер телефона не указан!</string>
+    <string name="no_chats">У Вас пока нет переписок !</string>
+    <string name="no_chats_by_advert">У Вас пока нет переписок с данным пользователем ни по одному из объявлений !\nНачните переписку перейдя на окно объявления.</string>
+    <string name="not_read">Не прочитано</string>
+    <string name="load_filters">load filters</string>
+    <string name="add_advert_sell">Продам</string>
+    <string name="add_advert_buy">Куплю</string>
+    <string name="advert_image_group_default_count">0</string>
+    <string name="registration_fail_text">Одно из полей введено не верно или пароли не совпадают!</string>
+    <string name="empty_phone">Поле \"Телефон\" не может быть пустым</string>
+    <string name="empty_title">Поле \"Заголовок объявления\" не может быть пустым</string>
+    <string name="empty_description">Поле \"Описание\" не может быть пустым</string>
+    <string name="empty_price">Поле \"Цена\" не может быть пустым</string>
+    <string name="add_advert_empty_category">Выберите категорию</string>
+    <string name="add_advert_empty_location">Укажите город</string>
+
+    <string name="advert_created_done"> <b>Готово!</b> \n Поздравляем: Вы создали объявление. \n Оно будет опубликовано сразу после \n модерации. \n \n
+                        А пока это происходит, \n Вы можете:</string>
+
+    <string name="advert_edited_done"> <b>Готово!</b> \n Вы изменили объявление. \n Изменения вступят в силу сразу \n после модерации. \n \n
+                        А пока это происходит, \n вы можете:</string>
+
+    <string name="advert_created_else"> или </string>
+    <string name="advert_created_finish"> А впрочем, можете делать \n все, что хотите!</string>
+    <string name="show_all_adverts">Просмотреть другие объявления</string>
+    <string name="create_new_advert">Создать ещё одно объявление</string>
+    <string name="add_advert_fail">Не удалось добавить объявление. Попробуйте, пожалуйста, позже.</string>
+    <string name="edit_advert">Изменить</string>
+
+
+    <string name="new_message">Новое сообщение !</string>
+    <string name="new_comment">Новый комментарий !</string>
+    <string name="new_rating">Новая оценка !</string>
+    <string name="no_adverts">У Вас пока нет объявлений !</string>
+    <string name="need_authorize">Для добавления объявления необходимо авторизироваться!</string>
+    <string name="cannot_delete_advert">Удалить возможно только неактивное объявление.</string>
+    <string name="sell_title">Продажа</string>
+    <string name="buy_title">Покупка</string>
+    <string name="auth_fail">Одно из полей введено не верно !</string>
+    <string name="reg_fail">Одно из полей введено не верно и\или почта уже используется!</string>
+    <string name="restore_fail">Почта введена не верно !</string>
+    <string name="send_to_email">Данные для восстановления высланы на почту.</string>
+    <string name="name_size_error">Введите имя</string>
+
+    <string name="add_advert_select_phone_title">Выберите телефон</string>
+    <string name="add_advert_enter_new_phone">Указать новый номер</string>
+    <string name="filter_text_last_added">Последние добавленные</string>
+    <string name="filter_text_by_price_asc">По возрастанию цены</string>
+    <string name="filter_text_by_price_desc">По убыванию цены</string>
+    <string name="filter_text_by_rating">По рейтингу</string>
+    <string name="filter_text_free">Бесплатные</string>
+    <string name="filter_text_sale">Платные</string>
+    <string name="filter_text_used">Б/у</string>
+    <string name="filter_text_new">Новые</string>
+    <string name="filter_text_exchange">Обмен</string>
+    <string name="all_fields_required">Можете указать телефон</string>
+    <string name="profile_deleted">Ваш профиль удалён. Мы будем очень сильно скучать :(\n\nВозвращайтесь в любое время , мы будем рады Вас видеть!</string>
+    <string name="no_notifications">У Вас пока нет уведомлений в данной категории !</string>
+    <string name="no_file_error">Невозможно загрузить файл ! Возможно , файл не найден на устройстве.</string>
+    <string name="my_advert_extension_date_text">Последнее продление: <b> %s</b> </string>
+    <string name="my_advert_extension_finished_text">Через %d дней ваше объявления станет  \n неактивным
+                        и не будет отображаться в \n каталоге.</string>
+    <string name="my_advert_is_unapproved">Ваше объявление не утверждено. \n Продлить возможно только утвержденное объявление.</string>
+    <string name="extend_advert_button_text">Продлить</string>
+    <string name="advert_price_type_free">Бесплатно</string>
+    <string name="add_advert_empty_advert_type">Укажите тип объявления</string>
+    <string name="add_advert_empty_price_type">Укажите тип продажи</string>
+    <string name="filter_text_sell">Продажа</string>
+    <string name="filter_text_buy">Покупка</string>
+    <string name="filter_by_buy_sell">Покупка, продажа</string>
+    <string name="add_advert_cannot_add_more_phones">Вы не можете добавить телефонов больше, чем указано в профиле</string>
+    <string name="warning_delete_advert">Вы действительно хотите удалить объявление?</string>
+    <string name="dialer_not_installed">Установите приложение для совершения звонков</string>
+    <string name="advert_unapproved">Не утверждено</string>
+    <string name="no_phone_caller">Ваше устройство не поддерживает набор номера !</string>
+    <string name="star_symbol">*</string>
+    <string name="rates_title">Оценки</string>
+    <string name="comm_title">Общение</string>
+    <string name="important_title">Важное</string>
+    <string name="rates_title_big">ОЦЕНКИ</string>
+    <string name="comm_title_big">ОБЩЕНИЕ</string>
+    <string name="important_title_big">ВАЖНОЕ</string>
+
+    <string name="add_advert_photo_make_photo">Сделать фото</string>
+    <string name="add_advert_photo_select_from_gallery">Выбрать из галереи</string>
+    <string name="advert_expiry_date_over">Время актуальности объявления истекло. Пожалуйста, продлите объявление.</string>
+    <string name="clear_phones">Очистить</string>
+    <string name="select_search_type">Выберите тип поиска</string>
+    <string name="close_alert">Закрыть</string>
+    <string name="search_by_adverts">Поиск по объявлениям</string>
+    <string name="search_by_users">Поиск по пользователям</string>
+    <string name="filters_list_is_empty">Необходимо добавить фильтры к объявлению</string>
+    <string name="change_password_done">Пароль успешно изменен</string>
+    <string name="change_password_fail">Не удалось изменить пароль</string>
+    <string name="change_personal_data_done">Изменение персональных данных прошло успешно</string>
+    <string name="change_personal_data_fail">Не удалось изменить персональные данные</string>
+    <string name="message_is_copied">Сообщение скопировано</string>
+    <string name="cannot_load_photo_large_size">Невозможно загрузить фото, размер которого превышает %dМб</string>
+    <string name="cannot_load_photo">Не удалось добавить фото</string>
+    <string name="messages_search_user">Поиск пользователей</string>
+    <string name="advert_no_active">Объявление неактивно</string>
+    <string name="error_while_add_photo">При добавлении фотографии возникла ошибка. Пожалуйста, повторите попытку еще раз.</string>
+    <string name="advert_no_availdable">Объявление более не доступно</string>
+    <string name="expiry_done">Срок актуальности объявления продлен успешно</string>
+    <string name="add_advert_check_parameters">Проверьте правильность ввода текстовых полей.</string>
+    <string name="seller_profile_write_title">Переписка</string>
+    <string name="activity_launcher_location_spinner_hint">Выберите местоположение</string>
+    <string name="fragment_profile_registration_date">Дата регистрации: %s</string>
+    <string name="advert_location_format" formatted="false">%s,\n%s</string>
+    <string name="main_website_url">http://www.autoplanet.pro</string>
+    <string name="advert_is_deleted">Объявление удалено</string>
+    <string name="my_adverts_title">Мои объявления</string>
+    <string name="error_while_get_external_storage_permossion">Для добавления фото необходим доступ к фото</string>
+    <string name="timeout_request">Время ожидания запроса истекло</string>
+</resources>

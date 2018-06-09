@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="@dimen/menu_tab_height">
+
+    <ImageView
+        style="@style/WrapContentStyle"
+        android:id="@+id/iv_menu_item_icon"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/drawer_name_top_padding" />
+
+    <com.artjoker.core.views.ArtJokerTextView
+        style="@style/MatchParentStyle"
+        android:id="@+id/tv_menu_item_name"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_menu_item_icon"
+        android:layout_toEndOf="@+id/iv_menu_item_icon"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/drawer_menu_left_padding"
+        android:textStyle="normal"
+        android:fontFamily="@string/sans_serif_light"
+        android:focusable="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_size_5pt" />
+
+
+</RelativeLayout>

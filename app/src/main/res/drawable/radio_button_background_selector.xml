@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+    <item android:state_checked="true"><shape>
+        <solid android:color="@color/red_text_color" />
+
+
+    </shape></item>
+    <item android:state_pressed="true"><shape>
+        <solid android:color="@color/red_text_color" />
+
+
+    </shape></item>
+
+
+    <item android:state_checked="false"><shape android:shape="rectangle">
+        <solid android:color="@color/search_view_background" />
+
+
+    </shape></item>
+
+</selector>

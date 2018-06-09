@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="errorLess">5</integer>
+    <integer name="errorMore">10</integer>
+
+</resources>

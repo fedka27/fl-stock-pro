@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="@dimen/advertisement_height">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_edit_advert_photos_warning"
+        android:src="@drawable/warning"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/add_advert_text_top_margin"
+        android:layout_marginBottom="@dimen/change_pass_old_pass_bot_margin" />
+
+    <com.artjoker.core.views.ArtJokerTextView
+       style="@style/SanSerifLight"
+        android:id="@+id/tv_warning_title"
+        android:layout_below="@+id/iv_edit_advert_photos_warning"
+        android:layout_centerHorizontal="true"
+        android:text="@string/warning_add_max_photo_count_title"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_5pt" />
+</RelativeLayout>

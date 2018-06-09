@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/filters_list_item_height"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:id="@+id/spinner_item_container">
+
+    <TextView
+        android:id="@+id/filter_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/vk_white"
+        android:gravity="center|left"
+        android:text="dasdsad"
+        android:padding="@dimen/tv_advert_spinner_item_padding"
+        android:textColor="#000000"></TextView>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:background="@drawable/apptheme_btn_check_holo_light"
+        android:id="@+id/filter_value_check_box" />
+
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<resources>
+
+    <string name="error_response_from_server">Server connection error, so please try again later</string>
+    <string name="error_technician_not_found">Technician not found on server, so please contact your supervisor</string>
+    <string name="error_wrong_password">Wrong password</string>
+    <string name="request_categories">Categories</string>
+    <string name="request_filters">Filters</string>
+    <string name="request_sub_categories">Subcategories</string>
+    <string name="advertisement">Advertisement</string>
+    <string name="favourites">Get Favourites</string>
+    <string name="favourites_add_remove">Add or remove Favourites</string>
+    <string name="request_registration">Registration</string>
+    <string name="request_authorization">Authorization</string>
+    <string name="request_social_registration">Social Registration</string>
+    <string name="request_social_authorization">Social Authorization</string>
+    <string name="request_social_synchronization">Social Synchronization</string>
+    <string name="request_restore">Restore</string>
+    <string name="request_personal_data">Personal Data</string>
+    <string name="request_user_data">User Data</string>
+    <string name="request_delete_profile">Delete Profile</string>
+    <string name="request_delete_profile_photo">Delete Profile Photo</string>
+    <string name="request_edit_profile_photo">Edit Profile Photo</string>
+    <string name="request_change_password">Change Password</string>
+    <string name="request_edit_user">Edit User</string>
+    <string name="request_messages_by_user">Messages By User</string>
+    <string name="request_change_message_status">Change Message Status</string>
+    <string name="request_set_rating">Set Rating Request</string>
+    <string name="request_all_users_ads">Get All Users Ads Request</string>
+    <string name="request_advert_details">Get Advert Details Request</string>
+    <string name="request_chat">Get Chat Request</string>
+    <string name="confirm_registration">Please confirm registration by Email</string>
+    <string name="request_send_message_status">Send Message Status</string>
+    <string name="request_get_comments">Get Comments</string>
+    <string name="request_extend_advert">Extend advert</string>
+    <string name="request_add_comment">Add Comment</string>
+    <string name="request_get_countries">Countries</string>
+    <string name="request_get_regions">Regions</string>
+    <string name="request_add_photo_to_advert">Add photo to advert</string>
+    <string name="request_settings">Settings</string>
+    <string name="request_like_comment">Like comment</string>
+
+    <string name="request_subscribe_gcm">Subscribe GCM</string>
+    <string name="request_unsubscribe_gcm">Unsubscribe GCM</string>
+    <string name="request_get_cities">Get cities</string>
+    <string name="request_get_notification">Notification Request</string>
+    <string name="search_advertisement">Search advertisement request</string>
+    <string name="request_delete_advert">Delete Advert</string>
+
+</resources>

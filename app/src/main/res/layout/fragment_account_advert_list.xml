@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    style="@style/MatchParentStyle">
+
+    <com.artjoker.core.views.ArtJokerSearchView
+        style="@style/SearchViewStyle"
+        android:id="@+id/sv_by_atv_account"
+        android:queryHint="@string/search_by_categories"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp" />
+
+    <com.artjoker.core.views.ArtJokerTextView
+        style="@style/WrapContentStyle"
+        android:id="@+id/tv_no_chats"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/no_adverts"
+        android:textSize="@dimen/font_size_7pt"
+        android:textStyle="italic"
+        android:textColor="@color/message_text_color"
+        android:gravity="center"
+        android:layout_below="@+id/sv_by_atv_account"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        style="@style/WrapContentStyle"
+        android:layout_marginTop="5dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="3dp"
+        android:id="@+id/lv_adverts_account"
+        android:layout_alignStart="@+id/sv_by_atv_account"
+        android:layout_alignEnd="@+id/sv_by_atv_account"
+        android:layout_below="@+id/sv_by_atv_account" />
+
+</RelativeLayout>

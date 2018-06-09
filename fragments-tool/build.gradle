@@ -1,0 +1,11 @@
+apply plugin: 'com.android.library'
+apply from: "$rootProject.projectDir/gradle-scripts/base.gradle"
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "20.0.0"
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}

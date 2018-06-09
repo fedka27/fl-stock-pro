@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View android:id="@+id/exp_text_view_header"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/vk_black"/>
+
+    <com.artjoker.core.views.ArtJokerTextView
+        android:id="@+id/exp_text_view_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.25"
+        android:textSize="16sp"
+        android:ellipsize="end"
+        android:textColor="@color/vk_share_gray_line"/>
+
+    <LinearLayout android:id="@+id/exp_text_view_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="@color/vk_black"/>
+        <View android:id="@+id/exp_text_view_icon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_weight="0"
+            android:background="@drawable/arrow_grey_right"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="@color/vk_black"/>
+    </LinearLayout>
+
+</merge>

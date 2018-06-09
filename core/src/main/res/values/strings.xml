@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="error_response_from_server">Server connection error, so please try again later</string>
+    <string name="error_request_validation">Request is not valid</string>
+    <string name="error_internet_connection">Please check internet connection</string>
+    <string name="error_session_not_valid">Auth error, so please sign in</string>
+    <string name="error_in_request">Error while send request, please try again later</string>
+    <string name="error_server_response">Incorrect request, server response error</string>
+    <string name="error_process_response">Cannot process response, please try again later</string>
+    <string name="success_request">Request processed successfully</string>
+    <string name="connection_error">Отсутвует подключение. Включить Wi-Fi ?</string>
+    <string name="email_error">Email введен неверно</string>
+    <string name="phone_error">Телефон введен неверно</string>
+    <string name="warn">Внимание !</string>
+    <string name="warning_banned">Вы были забанены ! Свяжитесь с администрацией.</string>
+    <string name="warning_not_active">Аккаунт не активен. Возможно Вы не подтвердили регистрацию по email.</string>
+    <string name="ok">Ok</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+
+</resources>

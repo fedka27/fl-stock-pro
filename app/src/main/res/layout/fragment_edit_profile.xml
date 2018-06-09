@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchParentStyle">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/MatchParentStyle"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/drawer_menu_top_padding"
+        android:paddingLeft="@dimen/drawer_menu_left_padding"
+        android:paddingRight="@dimen/drawer_menu_left_padding"
+        android:paddingTop="@dimen/drawer_menu_top_padding">
+
+        <LinearLayout
+            android:id="@+id/idimagecontainer"
+            android:layout_width="@dimen/messages_by_advert_item_height"
+            android:layout_height="@dimen/messages_by_advert_item_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:layout_alignParentTop="true">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_edit_profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                fresco:progressBarImage="@drawable/no_image"
+                fresco:failureImage="@drawable/no_image"
+                fresco:roundedCornerRadius="1dp"
+                fresco:roundAsCircle="true" />
+
+        </LinearLayout>
+
+        <com.artjoker.core.views.ArtJokerButton
+            android:id="@+id/button_delete_profile_photo"
+            style="@style/ProfileButtonsStyle"
+            android:layout_width="@dimen/advert_description_grey_width"
+            android:layout_alignBottom="@+id/idimagecontainer"
+            android:layout_toEndOf="@+id/idimagecontainer"
+            android:layout_toRightOf="@+id/idimagecontainer"
+            android:drawableLeft="@drawable/button_delete_profile_left_selector"
+            android:gravity="center_vertical"
+            android:text="@string/delete_title" />
+
+        <com.artjoker.core.views.ArtJokerButton
+            android:id="@+id/button_edit_profile_photo"
+            style="@style/ProfileButtonsStyle"
+            android:layout_width="@dimen/advert_description_grey_width"
+            android:layout_above="@+id/button_delete_profile_photo"
+            android:layout_toEndOf="@+id/idimagecontainer"
+            android:layout_toRightOf="@+id/idimagecontainer"
+            android:drawableLeft="@drawable/button_edit_profile_left_selector"
+            android:gravity="center_vertical"
+            android:text="@string/edit_title"
+            android:textColor="@drawable/radio_button_text_color_selector" />
+
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/idimagecontainer"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+                <com.artjoker.core.views.ArtJokerTextView
+                    android:id="@+id/tv_name_title"
+                    style="@style/SanSerifLight"
+                    android:layout_marginLeft="@dimen/drawer_menu_top_padding"
+                    android:layout_marginRight="@dimen/star_padding"
+                    android:text="@string/name_title"
+                    android:textSize="@dimen/font_size_5pt" />
+
+                <com.artjoker.core.views.ArtJokerTextView
+                    android:id="@+id/tv_name_description"
+                    style="@style/SanSerifLight"
+                    android:layout_alignTop="@+id/tv_name_title"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toEndOf="@+id/tv_name_title"
+                    android:layout_toRightOf="@+id/tv_name_title"
+                    android:singleLine="true"
+                    android:text="@string/name_description"
+                    android:textColor="@color/categories_text_color"
+                    android:textSize="@dimen/font_size_4pt" />
+            </LinearLayout>
+
+            <com.artjoker.core.views.ArtJokerEditText
+                android:id="@+id/et_edit_profile_name"
+                style="@style/EditTextStyle"
+                android:fontFamily="@string/sans_serif_light"
+                android:textSize="@dimen/font_size_6pt" />
+
+            <com.artjoker.core.views.ArtJokerTextView
+                android:id="@+id/tv_edit_profile_phone_number_title"
+                style="@style/SanSerifLight"
+                android:layout_below="@+id/et_edit_profile_name"
+                android:layout_marginBottom="@dimen/advertisement_location_margin"
+                android:layout_marginLeft="@dimen/drawer_menu_top_padding"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/add_advert_phone_title"
+                android:textSize="@dimen/font_size_5pt" />
+
+            <LinearLayout
+                android:id="@+id/phonesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+            </LinearLayout>
+
+            <com.artjoker.core.views.ArtJokerTextView
+                android:id="@+id/tv_edit_profile_email"
+                style="@style/SanSerifLight"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/et_edit_profile_phone_number"
+                android:layout_marginBottom="@dimen/advertisement_location_margin"
+                android:layout_marginLeft="@dimen/drawer_menu_top_padding"
+                android:layout_marginTop="@dimen/drawer_menu_left_padding"
+                android:inputType="textEmailAddress"
+                android:text="@string/email"
+                android:textSize="@dimen/font_size_5pt" />
+
+            <com.artjoker.core.views.ArtJokerEditText
+                android:id="@+id/et_edit_profile_email"
+                style="@style/EditTextStyle"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_edit_profile_email"
+                android:enabled="false"
+                android:fontFamily="@string/sans_serif_light"
+                android:textSize="@dimen/font_size_6pt" />
+
+            <Spinner
+                android:id="@+id/fragment_edit_profile_location_spinner"
+                style="@style/SpinnerStyle"
+                android:layout_below="@+id/et_edit_profile_email"
+                android:layout_marginBottom="@dimen/drawer_menu_left_padding"
+                android:layout_marginTop="@dimen/drawer_menu_left_padding"
+                android:hint="@string/add_advert_city"
+                android:spinnerMode="dropdown" />
+
+            <com.artjoker.core.views.ArtJokerButton
+                android:id="@+id/button_save_profile_changes"
+                style="@style/LoginButton"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/et_edit_profile_email"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/change_pass_pass_field_height"
+                android:enabled="false"
+                android:paddingLeft="@dimen/advertisement_price_margin"
+                android:paddingRight="@dimen/advertisement_price_margin"
+                android:text="@string/save_changes"
+                android:textSize="@dimen/font_size_6pt" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

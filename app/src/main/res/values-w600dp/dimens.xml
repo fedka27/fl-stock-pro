@@ -1,0 +1,8 @@
+<resources>
+
+    <dimen name="action_bar_height">48dip</dimen>
+    <dimen name="profile_buttons_margin">23dp</dimen>
+    <dimen name="rating_bar_height">38dp</dimen>
+    <dimen name="comment_text_min_width">110dp</dimen>
+    <dimen name="comment_text_max_width">240dp</dimen>
+</resources>

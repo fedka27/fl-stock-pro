@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:gravity="right">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <ImageView
+                    android:id="@+id/iv_output_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="@dimen/advertisement_text_title_size"
+                    android:src="@drawable/warning" />
+
+                <LinearLayout
+                    android:id="@+id/adapter_chat_message_output_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chat_outcoming_message_background_selector"
+                    android:gravity="center">
+
+                    <com.artjoker.core.views.ArtJokerTextView
+                        android:id="@+id/tv_message_in_chat"
+                        style="@style/SanSerifLight"
+                        android:gravity="right"
+                        android:padding="10dp"
+                        android:textColor="@color/message_color"
+                        android:textSize="@dimen/font_size_6pt" />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <com.artjoker.core.views.ArtJokerTextView
+            android:id="@+id/tv_message_date"
+            style="@style/SanSerifLight"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="@dimen/font_size_4pt" />
+
+        <com.artjoker.core.views.ArtJokerTextView
+            android:id="@+id/tv_message_status"
+            style="@style/SanSerifLight"
+            android:textSize="@dimen/font_size_4pt"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

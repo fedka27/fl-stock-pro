@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/lv_favorites_adverts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="3dp"
+        android:background="@android:color/white" />
+
+    <com.artjoker.core.views.ArtJokerTextView
+        android:id="@android:id/empty"
+        style="@style/SanSerifLight"
+        android:background="@color/category_grid_view_background"
+        android:padding="@dimen/empty_comments_padding"
+        android:text="@string/no_favourites"
+        android:textAllCaps="true"
+        android:visibility="visible"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/fragment_adverts_search_text"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAllCaps="true"
+        android:layout_centerInParent="true"
+        android:background="@color/category_grid_view_background"
+        android:text="Поиск..."
+        android:visibility="gone"/>
+
+</FrameLayout>

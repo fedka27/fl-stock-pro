@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    style="@style/MatchParentStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/MatchParentStyle"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/drawer_menu_left_padding"
+        android:paddingRight="@dimen/drawer_menu_left_padding">
+
+        <com.artjoker.core.views.ArtJokerTextView
+            style="@style/SanSerifLight"
+            android:id="@+id/tv_registration_title"
+            android:text="@string/registration_text"
+            android:layout_marginLeft="@dimen/drawer_menu_left_padding"
+            android:layout_marginTop="@dimen/change_pass_top_margin"
+            android:layout_marginBottom="@dimen/change_pass_top_margin"
+            android:textColor="@color/categories_text_color"
+            android:textSize="@dimen/font_size_7pt"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <com.artjoker.core.views.ArtJokerEditText
+                android:textSize="@dimen/font_size_6pt"
+                custom:showErrorMessageIfLenghtLessThen="@integer/name_length"
+                custom:errorMessageIfLenghtLessThen="@string/name_size_error"
+                style="@style/EditTextStyle"
+                android:id="@+id/et_reg_login"
+                android:inputType="text"
+                android:hint="@string/registration_login_hint"
+                android:layout_weight="0.9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/star_symbol"
+                android:paddingLeft="@dimen/star_padding" />
+        </LinearLayout>
+
+        <com.artjoker.core.views.ArtJokerTextView
+            style="@style/SanSerifLight"
+            android:id="@+id/tv_login_title"
+            android:text="@string/registration_login_descr"
+            android:paddingLeft="@dimen/change_pass_title_padding"
+            android:textColor="@color/categories_text_color"
+            android:textSize="@dimen/font_size_5pt"
+            android:layout_marginBottom="@dimen/change_pass_old_pass_bot_margin" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <com.artjoker.core.views.ArtJokerEditText
+                style="@style/EditTextStyle"
+                android:id="@+id/et_reg_email"
+                android:hint="@string/email"
+                android:textSize="@dimen/font_size_6pt"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="@dimen/advertisement_location_margin"
+
+                android:layout_weight="0.9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/star_symbol"
+                android:paddingLeft="@dimen/star_padding" />
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/SanSerifLight"
+            android:paddingLeft="@dimen/change_pass_title_padding"
+            android:textColor="@color/categories_text_color"
+            android:textSize="@dimen/font_size_5pt"
+            android:text="@string/all_fields_required"
+            android:id="@+id/textView4" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/phonesLayout">
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.artjoker.core.views.ArtJokerEditText
+                style="@style/EditTextStyle"
+                android:id="@+id/et_reg_password"
+                android:inputType="textPassword"
+                android:layout_marginBottom="@dimen/change_pass_old_pass_bot_margin"
+                android:textSize="@dimen/font_size_6pt"
+                android:hint="@string/registration_password_title"
+                android:layout_marginTop="@dimen/advertisement_location_text_size"
+                custom:errorMessageIfLenghtLessThen="@string/password_error"
+                custom:showErrorMessageIfLenghtLessThen="@integer/password_length"
+                android:layout_weight="0.9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/star_symbol"
+                android:paddingLeft="@dimen/star_padding" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <com.artjoker.core.views.ArtJokerEditText
+                style="@style/EditTextStyle"
+                android:id="@+id/et_reg_repeat_password"
+                android:inputType="textPassword"
+                android:textSize="@dimen/font_size_6pt"
+                android:hint="@string/registration_repeat_password"
+                custom:errorMessageIfLenghtLessThen="@string/password_error"
+                custom:showErrorMessageIfLenghtLessThen="@integer/password_length"
+                android:layout_weight="0.9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/star_symbol"
+                android:paddingLeft="@dimen/star_padding" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/fragment_registration_location_spinner"
+            style="@style/SpinnerStyle"
+            android:layout_marginBottom="@dimen/drawer_menu_left_padding"
+            android:layout_marginTop="@dimen/drawer_menu_left_padding"
+            android:layout_marginRight="@dimen/drawer_menu_left_padding"
+            android:hint="@string/add_advert_city"
+            android:spinnerMode="dropdown" />
+
+        <com.artjoker.core.views.ArtJokerButton
+            style="@style/LoginButton"
+            android:id="@+id/button_registrtion"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/registration_button_text"
+            android:layout_marginTop="@dimen/change_pass_button_change_pass_top_margin"
+            android:layout_marginBottom="@dimen/action_bar_height" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/advertisement_height"
+    android:layout_height="@dimen/advertisement_height">
+
+    <ImageView
+        android:id="@+id/iv_edit_advert_photo_image"
+        style="@style/MatchParentStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true" />
+
+    <ImageButton
+        android:id="@+id/ib_edit_advert_remove_photo"
+        android:layout_width="@dimen/activity_horizontal_margin"
+        android:layout_height="@dimen/activity_horizontal_margin"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/advertisement_text_price_size"
+        android:layout_marginTop="@dimen/advertisement_text_price_size"
+        android:background="@drawable/round_button" />
+</RelativeLayout>
